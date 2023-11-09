@@ -17,7 +17,7 @@ require (
 	github.com/docker/libcontainer v2.2.1+incompatible
 	github.com/envoyproxy/go-control-plane v0.10.1
 	github.com/fastly/go-utils v0.0.0-20180712184237-d95a45783239 // indirect
-	github.com/fatih/color v1.7.0
+	github.com/fatih/color v1.12.0
 	github.com/fsnotify/fsnotify v1.4.9
 	github.com/gdamore/tcell/v2 v2.4.1-0.20210905002822-f057f0a857a1
 	github.com/ghodss/yaml v1.0.0
@@ -49,6 +49,7 @@ require (
 	github.com/nocalhost/remotecommand v0.0.0-20210713025133-bfbc2d3e1250
 	github.com/olekukonko/tablewriter v0.0.4
 	github.com/olivere/elastic/v7 v7.0.27
+	github.com/openkruise/kruise-api v1.5.0 // indirect
 	github.com/pkg/errors v0.9.1
 	github.com/prometheus/client_golang v1.11.0
 	github.com/qiniu/api.v7 v0.0.0-20190520053455-bea02cd22bf4
@@ -74,7 +75,7 @@ require (
 	github.com/yuin/gopher-lua v0.0.0-20200816102855-ee81675732da // indirect
 	go.uber.org/zap v1.19.0
 	golang.org/x/crypto v0.6.0
-	golang.org/x/mod v0.6.0-dev.0.20220419223038-86c51ed26bb4
+	golang.org/x/mod v0.6.0
 	golang.org/x/net v0.6.0
 	golang.org/x/sync v0.0.0-20220722155255-886fb9371eb4
 	golang.org/x/sys v0.5.0
@@ -82,20 +83,20 @@ require (
 	golang.zx2c4.com/wireguard v0.0.0-20210927201915-bb745b2ea326
 	golang.zx2c4.com/wireguard/windows v0.4.10
 	google.golang.org/grpc v1.40.0
-	google.golang.org/protobuf v1.27.1
+	google.golang.org/protobuf v1.28.1
 	gopkg.in/natefinch/lumberjack.v2 v2.0.0
 	gopkg.in/yaml.v3 v3.0.1
 	istio.io/api v0.0.0-20210809175348-eff556fb5d8a
 	istio.io/client-go v1.11.0
-	k8s.io/api v0.21.2
-	k8s.io/apiextensions-apiserver v0.21.2
-	k8s.io/apimachinery v0.21.2
+	k8s.io/api v0.22.6
+	k8s.io/apiextensions-apiserver v0.21.3
+	k8s.io/apimachinery v0.22.6
 	k8s.io/cli-runtime v0.21.0-alpha.1
-	k8s.io/client-go v0.21.2
+	k8s.io/client-go v0.22.6
 	k8s.io/kubectl v0.21.0-alpha.1
-	sigs.k8s.io/controller-runtime v0.9.0
+	sigs.k8s.io/controller-runtime v0.9.6
 	sigs.k8s.io/kustomize v2.0.3+incompatible
-	sigs.k8s.io/yaml v1.2.0
+	sigs.k8s.io/yaml v1.3.0
 )
 
 replace (
