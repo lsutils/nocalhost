@@ -16,6 +16,7 @@ require (
 	github.com/derailed/tview v0.6.6
 	github.com/docker/libcontainer v2.2.1+incompatible
 	github.com/envoyproxy/go-control-plane v0.10.1
+	github.com/evanphx/json-patch v4.12.0+incompatible // indirect
 	github.com/fastly/go-utils v0.0.0-20180712184237-d95a45783239 // indirect
 	github.com/fatih/color v1.12.0
 	github.com/fsnotify/fsnotify v1.4.9
@@ -24,6 +25,10 @@ require (
 	github.com/gin-contrib/pprof v1.3.0
 	github.com/gin-gonic/gin v1.7.0
 	github.com/go-ldap/ldap/v3 v3.4.1
+	github.com/go-logr/logr v1.2.3 // indirect
+	github.com/go-openapi/jsonpointer v0.19.5 // indirect
+	github.com/go-openapi/jsonreference v0.20.0 // indirect
+	github.com/go-openapi/swag v0.19.14 // indirect
 	github.com/go-playground/validator/v10 v10.9.0
 	github.com/go-redis/redis v6.15.9+incompatible
 	github.com/golang-jwt/jwt/v4 v4.5.0
@@ -31,6 +36,7 @@ require (
 	github.com/golang/protobuf v1.5.2
 	github.com/golang/snappy v0.0.4
 	github.com/gomodule/redigo v2.0.0+incompatible // indirect
+	github.com/google/go-cmp v0.5.9 // indirect
 	github.com/google/uuid v1.2.0
 	github.com/hashicorp/golang-lru v0.5.4
 	github.com/heroku/docker-registry-client v0.0.0-20190909225348-afc9e1acc3d5
@@ -49,7 +55,6 @@ require (
 	github.com/nocalhost/remotecommand v0.0.0-20210713025133-bfbc2d3e1250
 	github.com/olekukonko/tablewriter v0.0.4
 	github.com/olivere/elastic/v7 v7.0.27
-	github.com/openkruise/kruise-api v1.5.0 // indirect
 	github.com/pkg/errors v0.9.1
 	github.com/prometheus/client_golang v1.11.0
 	github.com/qiniu/api.v7 v0.0.0-20190520053455-bea02cd22bf4
@@ -77,9 +82,12 @@ require (
 	golang.org/x/crypto v0.6.0
 	golang.org/x/mod v0.6.0
 	golang.org/x/net v0.6.0
+	golang.org/x/oauth2 v0.0.0-20220223155221-ee480838109b // indirect
 	golang.org/x/sync v0.0.0-20220722155255-886fb9371eb4
 	golang.org/x/sys v0.5.0
 	golang.org/x/text v0.7.0
+	golang.org/x/time v0.0.0-20220210224613-90d013bbcef8 // indirect
+	golang.org/x/tools v0.2.0 // indirect
 	golang.zx2c4.com/wireguard v0.0.0-20210927201915-bb745b2ea326
 	golang.zx2c4.com/wireguard/windows v0.4.10
 	google.golang.org/grpc v1.40.0
@@ -93,9 +101,12 @@ require (
 	k8s.io/apimachinery v0.22.6
 	k8s.io/cli-runtime v0.21.0-alpha.1
 	k8s.io/client-go v0.22.6
+	k8s.io/kube-openapi v0.0.0-20211109043538-20434351676c // indirect
 	k8s.io/kubectl v0.21.0-alpha.1
+	k8s.io/utils v0.0.0-20221107191617-1a15be271d1d // indirect
 	sigs.k8s.io/controller-runtime v0.9.6
 	sigs.k8s.io/kustomize v2.0.3+incompatible
+	sigs.k8s.io/structured-merge-diff/v4 v4.2.3 // indirect
 	sigs.k8s.io/yaml v1.3.0
 )
 
