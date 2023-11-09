@@ -8,11 +8,11 @@ package webhook
 import (
 	"context"
 	"github.com/golang/glog"
+	"github.com/lsutils/nocalhost/internal/nhctl/const"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/client-go/dynamic"
 	"k8s.io/client-go/rest"
-	"nocalhost/internal/nhctl/const"
 	"time"
 )
 

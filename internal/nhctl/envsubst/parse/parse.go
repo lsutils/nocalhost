@@ -8,8 +8,8 @@ package parse
 
 import (
 	"fmt"
+	"github.com/lsutils/nocalhost/internal/nhctl/fp"
 	"github.com/pkg/errors"
-	"nocalhost/internal/nhctl/fp"
 	"strconv"
 	"strings"
 )
@@ -163,7 +163,6 @@ func (p *Parser) Parse(text string, absPath string, hasBeenInclude []string) (st
 
 		out += fmt.Sprint(v)
 	}
-
 
 	if len(errs) > 0 {
 		var b strings.Builder

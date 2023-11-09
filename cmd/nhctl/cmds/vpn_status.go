@@ -7,12 +7,12 @@ package cmds
 
 import (
 	"encoding/json"
+	"github.com/lsutils/nocalhost/cmd/nhctl/cmds/common"
+	"github.com/lsutils/nocalhost/internal/nhctl/daemon_client"
+	"github.com/lsutils/nocalhost/internal/nhctl/vpn/pkg"
+	"github.com/lsutils/nocalhost/internal/nhctl/vpn/util"
 	"github.com/spf13/cobra"
 	"k8s.io/client-go/tools/clientcmd"
-	"nocalhost/cmd/nhctl/cmds/common"
-	"nocalhost/internal/nhctl/daemon_client"
-	"nocalhost/internal/nhctl/vpn/pkg"
-	"nocalhost/internal/nhctl/vpn/util"
 	"sigs.k8s.io/yaml"
 )
 

@@ -8,10 +8,10 @@ package cmds
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"github.com/spf13/cobra"
 	"gopkg.in/yaml.v3"
 	"io"
-	"nocalhost/pkg/nhctl/log"
 	"os"
 )
 

@@ -6,12 +6,12 @@
 package cmds
 
 import (
+	"github.com/lsutils/nocalhost/cmd/nhctl/cmds/common"
+	_const "github.com/lsutils/nocalhost/internal/nhctl/const"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 	v1 "k8s.io/api/core/v1"
-	"nocalhost/cmd/nhctl/cmds/common"
-	_const "nocalhost/internal/nhctl/const"
-	"nocalhost/pkg/nhctl/log"
 	"regexp"
 )
 

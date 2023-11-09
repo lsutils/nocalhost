@@ -1,4 +1,4 @@
-module nocalhost
+module github.com/lsutils/nocalhost
 
 go 1.16
 

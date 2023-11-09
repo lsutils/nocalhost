@@ -7,16 +7,16 @@ package cluster
 
 import (
 	"github.com/gin-gonic/gin"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/global"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/model"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/service"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/app/api"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/app/router/middleware"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/clientgo"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/errno"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/log"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/setupcluster"
 	"github.com/spf13/cast"
-	"nocalhost/internal/nocalhost-api/global"
-	"nocalhost/internal/nocalhost-api/model"
-	"nocalhost/internal/nocalhost-api/service"
-	"nocalhost/pkg/nocalhost-api/app/api"
-	"nocalhost/pkg/nocalhost-api/app/router/middleware"
-	"nocalhost/pkg/nocalhost-api/pkg/clientgo"
-	"nocalhost/pkg/nocalhost-api/pkg/errno"
-	"nocalhost/pkg/nocalhost-api/pkg/log"
-	"nocalhost/pkg/nocalhost-api/pkg/setupcluster"
 )
 
 // GetList Delete the cluster completely

@@ -8,10 +8,10 @@ package cmds
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/lsutils/nocalhost/cmd/nhctl/cmds/common"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 	"gopkg.in/yaml.v3"
-	"nocalhost/cmd/nhctl/cmds/common"
 )
 
 func init() {

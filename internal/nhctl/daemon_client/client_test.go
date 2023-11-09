@@ -7,9 +7,9 @@ package daemon_client
 
 import (
 	"fmt"
+	"github.com/lsutils/nocalhost/internal/nhctl/utils"
 	"io"
 	"net"
-	"nocalhost/internal/nhctl/utils"
 	"path/filepath"
 	"testing"
 	"time"

@@ -11,12 +11,12 @@ import (
 	"github.com/gin-gonic/gin"
 	"golang.org/x/mod/semver"
 
-	"nocalhost/internal/nocalhost-api/global"
-	"nocalhost/internal/nocalhost-api/model"
-	"nocalhost/pkg/nocalhost-api/app/api"
-	"nocalhost/pkg/nocalhost-api/pkg/errno"
-	"nocalhost/pkg/nocalhost-api/pkg/log"
-	"nocalhost/pkg/nocalhost-api/pkg/registry"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/global"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/model"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/app/api"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/errno"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/log"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/registry"
 )
 
 // Get Get api server version

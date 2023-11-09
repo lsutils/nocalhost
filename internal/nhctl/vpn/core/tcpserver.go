@@ -9,9 +9,9 @@ import (
 	"bytes"
 	"context"
 	"fmt"
+	"github.com/lsutils/nocalhost/internal/nhctl/vpn/util"
 	log "github.com/sirupsen/logrus"
 	"net"
-	"nocalhost/internal/nhctl/vpn/util"
 	"time"
 )
 

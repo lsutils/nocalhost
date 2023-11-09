@@ -8,13 +8,13 @@ package nocalhost
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/lsutils/nocalhost/internal/nhctl/appmeta"
+	_const "github.com/lsutils/nocalhost/internal/nhctl/const"
+	"github.com/lsutils/nocalhost/internal/nhctl/daemon_client"
+	"github.com/lsutils/nocalhost/internal/nhctl/nocalhost_path"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"io/fs"
 	"io/ioutil"
-	"nocalhost/internal/nhctl/appmeta"
-	_const "nocalhost/internal/nhctl/const"
-	"nocalhost/internal/nhctl/daemon_client"
-	"nocalhost/internal/nhctl/nocalhost_path"
-	"nocalhost/pkg/nhctl/log"
 	"os"
 	"path/filepath"
 	"strings"
@@ -22,7 +22,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"nocalhost/internal/nhctl/utils"
+	"github.com/lsutils/nocalhost/internal/nhctl/utils"
 )
 
 func Init() error {

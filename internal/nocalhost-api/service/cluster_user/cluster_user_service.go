@@ -8,10 +8,10 @@ package cluster_user
 import (
 	"context"
 	"fmt"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/cache"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/model"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/repository/cluster_user"
 	"github.com/pkg/errors"
-	"nocalhost/internal/nocalhost-api/cache"
-	"nocalhost/internal/nocalhost-api/model"
-	"nocalhost/internal/nocalhost-api/repository/cluster_user"
 )
 
 type ClusterUser struct {

@@ -11,7 +11,7 @@ import (
 	"strings"
 
 	"github.com/heroku/docker-registry-client/registry"
-	"nocalhost/pkg/nocalhost-api/pkg/log"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/log"
 )
 
 func New(registryURL, user, password string) (*registry.Registry, error) {

@@ -7,6 +7,10 @@ package k8sutils
 
 import (
 	"context"
+	"github.com/lsutils/nocalhost/internal/nhctl/fp"
+	"github.com/lsutils/nocalhost/internal/nhctl/nocalhost_path"
+	"github.com/lsutils/nocalhost/internal/nhctl/utils"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime/schema"
@@ -18,10 +22,6 @@ import (
 	"k8s.io/client-go/tools/cache"
 	toolswatch "k8s.io/client-go/tools/watch"
 	"k8s.io/kubectl/pkg/scheme"
-	"nocalhost/internal/nhctl/fp"
-	"nocalhost/internal/nhctl/nocalhost_path"
-	"nocalhost/internal/nhctl/utils"
-	"nocalhost/pkg/nhctl/log"
 	"time"
 )
 

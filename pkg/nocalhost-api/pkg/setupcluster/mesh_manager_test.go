@@ -9,7 +9,7 @@ import (
 	"reflect"
 	"testing"
 
-	"nocalhost/internal/nocalhost-api/model"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/model"
 )
 
 func TestMeshDevInfo_SortApps(t *testing.T) {

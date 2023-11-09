@@ -8,8 +8,8 @@ package setupcluster
 import (
 	"sync"
 
-	"nocalhost/pkg/nocalhost-api/pkg/clientgo"
-	"nocalhost/pkg/nocalhost-api/pkg/errno"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/clientgo"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/errno"
 )
 
 var sharedMeshManagerFactoryCache = NewSharedMeshManagerFactory()

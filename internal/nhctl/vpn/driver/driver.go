@@ -6,8 +6,8 @@
 package driver
 
 import (
+	"github.com/lsutils/nocalhost/internal/nhctl/vpn/driver/wintun"
 	"k8s.io/client-go/util/retry"
-	"nocalhost/internal/nhctl/vpn/driver/wintun"
 	"os"
 	"path/filepath"
 )

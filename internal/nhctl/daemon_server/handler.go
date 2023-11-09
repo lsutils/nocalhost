@@ -7,13 +7,13 @@ package daemon_server
 
 import (
 	"context"
+	"github.com/lsutils/nocalhost/internal/nhctl/daemon_common"
+	"github.com/lsutils/nocalhost/internal/nhctl/daemon_server/command"
+	"github.com/lsutils/nocalhost/pkg/nhctl/clientgoutils"
+	k8sutil "github.com/lsutils/nocalhost/pkg/nhctl/k8sutils"
 	"github.com/pkg/errors"
 	k8serrors "k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"nocalhost/internal/nhctl/daemon_common"
-	"nocalhost/internal/nhctl/daemon_server/command"
-	"nocalhost/pkg/nhctl/clientgoutils"
-	k8sutil "nocalhost/pkg/nhctl/k8sutils"
 	"sync"
 	"time"
 )

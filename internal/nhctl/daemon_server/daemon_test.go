@@ -3,11 +3,11 @@ package daemon_server
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/lsutils/nocalhost/internal/nhctl/appmeta"
+	profile2 "github.com/lsutils/nocalhost/internal/nhctl/profile"
 	"github.com/pkg/errors"
 	"gopkg.in/yaml.v3"
 	"net"
-	"nocalhost/internal/nhctl/appmeta"
-	profile2 "nocalhost/internal/nhctl/profile"
 	"testing"
 )
 

@@ -7,8 +7,8 @@ package cluster
 
 import (
 	"context"
-	"nocalhost/internal/nocalhost-api/model"
-	"nocalhost/pkg/nocalhost-api/pkg/log"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/model"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/log"
 
 	"github.com/jinzhu/gorm"
 	"github.com/pkg/errors"

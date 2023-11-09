@@ -8,6 +8,8 @@ package resouce_cache
 import (
 	"fmt"
 	"github.com/hashicorp/golang-lru/simplelru"
+	"github.com/lsutils/nocalhost/internal/nhctl/utils"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"io/ioutil"
 	v1 "k8s.io/api/apps/v1"
 	corev1 "k8s.io/api/core/v1"
@@ -20,8 +22,6 @@ import (
 	"k8s.io/client-go/tools/clientcmd"
 	"k8s.io/client-go/util/flowcontrol"
 	"k8s.io/client-go/util/homedir"
-	"nocalhost/internal/nhctl/utils"
-	"nocalhost/pkg/nhctl/log"
 	"path"
 	"path/filepath"
 	"sync"

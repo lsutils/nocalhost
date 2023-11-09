@@ -6,10 +6,10 @@
 package controller
 
 import (
-	"nocalhost/internal/nhctl/common/base"
-	"nocalhost/internal/nhctl/const"
-	"nocalhost/internal/nhctl/nocalhost_path"
-	"nocalhost/internal/nhctl/utils"
+	"github.com/lsutils/nocalhost/internal/nhctl/common/base"
+	"github.com/lsutils/nocalhost/internal/nhctl/const"
+	"github.com/lsutils/nocalhost/internal/nhctl/nocalhost_path"
+	"github.com/lsutils/nocalhost/internal/nhctl/utils"
 	"os"
 	"path/filepath"
 )

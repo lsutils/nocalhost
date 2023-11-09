@@ -7,16 +7,16 @@ package cmds
 
 import (
 	"fmt"
+	"github.com/lsutils/nocalhost/cmd/nhctl/cmds/common"
+	"github.com/lsutils/nocalhost/internal/nhctl/app"
+	"github.com/lsutils/nocalhost/internal/nhctl/common/base"
+	"github.com/lsutils/nocalhost/internal/nhctl/controller"
+	"github.com/lsutils/nocalhost/internal/nhctl/daemon_client"
+	"github.com/lsutils/nocalhost/internal/nhctl/dev_dir"
+	"github.com/lsutils/nocalhost/internal/nhctl/profile"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
-	"nocalhost/cmd/nhctl/cmds/common"
-	"nocalhost/internal/nhctl/app"
-	"nocalhost/internal/nhctl/common/base"
-	"nocalhost/internal/nhctl/controller"
-	"nocalhost/internal/nhctl/daemon_client"
-	"nocalhost/internal/nhctl/dev_dir"
-	"nocalhost/internal/nhctl/profile"
-	"nocalhost/pkg/nhctl/log"
 	"os"
 )
 

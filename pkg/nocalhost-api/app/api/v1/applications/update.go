@@ -6,12 +6,12 @@
 package applications
 
 import (
-	"nocalhost/internal/nocalhost-api/model"
-	"nocalhost/internal/nocalhost-api/service"
-	"nocalhost/pkg/nocalhost-api/app/api"
-	"nocalhost/pkg/nocalhost-api/app/router/ginbase"
-	"nocalhost/pkg/nocalhost-api/pkg/errno"
-	"nocalhost/pkg/nocalhost-api/pkg/log"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/model"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/service"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/app/api"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/app/router/ginbase"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/errno"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/log"
 
 	"github.com/gin-gonic/gin"
 	"github.com/spf13/cast"

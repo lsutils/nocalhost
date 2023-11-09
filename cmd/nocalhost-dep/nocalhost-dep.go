@@ -1,7 +1,7 @@
 /*
 * Copyright (C) 2021 THL A29 Limited, a Tencent company.  All rights reserved.
 * This source code is licensed under the Apache License Version 2.0.
-*/
+ */
 
 // nocalhost-dep Based on webhook-admission
 package main
@@ -12,8 +12,8 @@ import (
 	"flag"
 	"fmt"
 	"github.com/golang/glog"
+	"github.com/lsutils/nocalhost/internal/nocalhost-dep/webhook"
 	"net/http"
-	"nocalhost/internal/nocalhost-dep/webhook"
 	"os"
 	"os/signal"
 	"syscall"
@@ -55,7 +55,7 @@ func main() {
 	whsvr := &webhook.WebhookServer{
 		SidecarConfig: sidecarConfig,
 		Server: &http.Server{
-			Addr: fmt.Sprintf(":%v", parameters.Port),
+			Addr:      fmt.Sprintf(":%v", parameters.Port),
 			TLSConfig: &tls.Config{Certificates: []tls.Certificate{pair}},
 		},
 	}

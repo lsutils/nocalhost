@@ -9,13 +9,13 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	"github.com/lsutils/nocalhost/cmd/nhctl/cmds/common"
+	"github.com/lsutils/nocalhost/internal/nhctl/app"
+	"github.com/lsutils/nocalhost/internal/nhctl/common/base"
+	"github.com/lsutils/nocalhost/internal/nhctl/syncthing/network/req"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"github.com/spf13/cobra"
 	"k8s.io/client-go/util/retry"
-	"nocalhost/cmd/nhctl/cmds/common"
-	"nocalhost/internal/nhctl/app"
-	"nocalhost/internal/nhctl/common/base"
-	"nocalhost/internal/nhctl/syncthing/network/req"
-	"nocalhost/pkg/nhctl/log"
 	"time"
 )
 

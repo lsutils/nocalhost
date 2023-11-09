@@ -1,3 +1,4 @@
+//go:build windows
 // +build windows
 
 /*
@@ -9,7 +10,7 @@ package cmds
 
 import (
 	"fmt"
-	"nocalhost/pkg/nhctl/log"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"os"
 	"os/exec"
 	"path/filepath"
@@ -42,7 +43,7 @@ func LookPath(file string) (string, error) {
 	return path, nil
 }
 
-//initializeGW todo
+// initializeGW todo
 func initializeGW() (string, error) {
 	k, err := registry.OpenKey(registry.LOCAL_MACHINE, `SOFTWARE\GitForWindows`, registry.QUERY_VALUE)
 	if err != nil {

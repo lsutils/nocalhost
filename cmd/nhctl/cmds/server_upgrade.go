@@ -7,11 +7,11 @@ package cmds
 
 import (
 	"fmt"
+	"github.com/lsutils/nocalhost/cmd/nhctl/cmds/common"
+	"github.com/lsutils/nocalhost/internal/nhctl/utils"
+	"github.com/lsutils/nocalhost/pkg/nhctl/clientgoutils"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"github.com/spf13/cobra"
-	"nocalhost/cmd/nhctl/cmds/common"
-	"nocalhost/internal/nhctl/utils"
-	"nocalhost/pkg/nhctl/clientgoutils"
-	"nocalhost/pkg/nhctl/log"
 	"regexp"
 	"strconv"
 	"strings"

@@ -4,18 +4,18 @@ import (
 	"github.com/gin-gonic/gin"
 	ldap2 "github.com/go-ldap/ldap/v3"
 	"github.com/jinzhu/gorm"
+	_const "github.com/lsutils/nocalhost/internal/nhctl/const"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/model"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/service"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/service/ldap"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/utils"
 	"github.com/pkg/errors"
 	"math/rand"
-	_const "nocalhost/internal/nhctl/const"
-	"nocalhost/internal/nocalhost-api/model"
-	"nocalhost/internal/nocalhost-api/service"
-	"nocalhost/internal/nocalhost-api/service/ldap"
-	"nocalhost/pkg/nhctl/log"
-	"nocalhost/pkg/nocalhost-api/pkg/utils"
 	"strings"
 
-	"nocalhost/pkg/nocalhost-api/app/api"
-	"nocalhost/pkg/nocalhost-api/pkg/errno"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/app/api"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/errno"
 )
 
 func GetConfiguration(c *gin.Context) {

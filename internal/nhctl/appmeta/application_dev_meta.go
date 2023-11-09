@@ -7,8 +7,8 @@ package appmeta
 
 import (
 	"encoding/json"
-	"nocalhost/internal/nhctl/common/base"
-	"nocalhost/pkg/nhctl/log"
+	"github.com/lsutils/nocalhost/internal/nhctl/common/base"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 )
 
 const (
@@ -24,7 +24,7 @@ type ApplicationDevMeta map[base.SvcType]map[ /* resource name */ string] /* ide
 
 type DevStartStatus string
 
-//type ApplicationDevType string
+// type ApplicationDevType string
 type EVENT string
 type ApplicationEvent struct {
 	Identifier   string

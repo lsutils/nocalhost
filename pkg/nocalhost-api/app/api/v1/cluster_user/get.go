@@ -12,15 +12,15 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/spf13/cast"
 
-	"nocalhost/internal/nocalhost-api/global"
-	"nocalhost/internal/nocalhost-api/model"
-	"nocalhost/internal/nocalhost-api/service"
-	"nocalhost/pkg/nocalhost-api/app/api"
-	"nocalhost/pkg/nocalhost-api/app/api/v1/service_account"
-	"nocalhost/pkg/nocalhost-api/app/router/ginbase"
-	"nocalhost/pkg/nocalhost-api/pkg/errno"
-	"nocalhost/pkg/nocalhost-api/pkg/log"
-	"nocalhost/pkg/nocalhost-api/pkg/setupcluster"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/global"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/model"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/service"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/app/api"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/app/api/v1/service_account"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/app/router/ginbase"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/errno"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/log"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/setupcluster"
 )
 
 // @Summary Plug-in Get personal application development environment (kubeconfig) (obsolete)
@@ -56,7 +56,7 @@ func GetFirst(c *gin.Context) {
 // @param Authorization header string true "Authorization"
 // @Param id path string true "Application ID"
 // @Success 200 {object} model.ClusterUserModel "Application development environment parameters,
-//including kubeconfig, status=0 application not installed, 1 installed"
+// including kubeconfig, status=0 application not installed, 1 installed"
 // @Router /v1/application/{id}/dev_space_list [get]
 func GetList(c *gin.Context) {
 	applicationId := cast.ToUint64(c.Param("id"))
@@ -151,7 +151,7 @@ func ListByUserId(c *gin.Context) {
 // @Param id path string true "Application ID"
 // @Param space_id path string true "DevSpace ID"
 // @Success 200 {object} model.ClusterUserModel "Application development environment parameters,
-//including kubeconfig, status=0 application not installed, 1 installed"
+// including kubeconfig, status=0 application not installed, 1 installed"
 // @Router /v1/application/{id}/dev_space/{space_id}/detail [get]
 func GetDevSpaceDetail(c *gin.Context) {
 	applicationId := cast.ToUint64(c.Param("id"))
@@ -176,7 +176,7 @@ func GetDevSpaceDetail(c *gin.Context) {
 // @param Authorization header string true "Authorization"
 // @Param id path string true "User ID"
 // @Success 200 {object} model.ClusterUserJoinClusterAndAppAndUser "Application development environment parameters,
-//including kubeconfig, status=0 application not installed, 1 installed"
+// including kubeconfig, status=0 application not installed, 1 installed"
 // @Router /v1/users/{id}/dev_space_list [get]
 func GetJoinClusterAndAppAndUser(c *gin.Context) {
 	condition := model.ClusterUserJoinClusterAndAppAndUser{}
@@ -205,7 +205,7 @@ func GetJoinClusterAndAppAndUser(c *gin.Context) {
 // @param Authorization header string true "Authorization"
 // @Param id path string true "DevSpace ID"
 // @Success 200 {object} model.ClusterUserJoinClusterAndAppAndUser "Application development environment parameters,
-//including kubeconfig, status=0 application not installed, 1 installed"
+// including kubeconfig, status=0 application not installed, 1 installed"
 // @Router /v1/dev_space/{id}/detail [get]
 func GetJoinClusterAndAppAndUserDetail(c *gin.Context) {
 	condition := model.ClusterUserJoinClusterAndAppAndUser{

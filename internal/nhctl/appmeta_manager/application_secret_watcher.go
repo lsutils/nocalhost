@@ -15,10 +15,10 @@ import (
 	"k8s.io/client-go/tools/cache"
 	"k8s.io/client-go/util/flowcontrol"
 
+	"github.com/lsutils/nocalhost/internal/nhctl/appmeta"
+	"github.com/lsutils/nocalhost/internal/nhctl/watcher"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"k8s.io/client-go/tools/clientcmd"
-	"nocalhost/internal/nhctl/appmeta"
-	"nocalhost/internal/nhctl/watcher"
-	"nocalhost/pkg/nhctl/log"
 	"sync"
 )
 

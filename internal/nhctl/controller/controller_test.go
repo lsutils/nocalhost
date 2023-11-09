@@ -8,10 +8,10 @@ package controller
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/lsutils/nocalhost/internal/nhctl/profile"
+	"github.com/lsutils/nocalhost/pkg/nhctl/clientgoutils"
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 	"k8s.io/apimachinery/pkg/runtime"
-	"nocalhost/internal/nhctl/profile"
-	"nocalhost/pkg/nhctl/clientgoutils"
 	"testing"
 )
 

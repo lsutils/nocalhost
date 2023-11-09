@@ -8,8 +8,8 @@ package appmeta_manager
 import (
 	"encoding/json"
 	"fmt"
-	"nocalhost/internal/nhctl/appmeta"
-	"nocalhost/pkg/nhctl/log"
+	"github.com/lsutils/nocalhost/internal/nhctl/appmeta"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"runtime/debug"
 	"sync"
 )

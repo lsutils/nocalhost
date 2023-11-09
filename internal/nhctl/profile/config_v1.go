@@ -6,7 +6,7 @@
 package profile
 
 import (
-	"nocalhost/internal/nhctl/fp"
+	"github.com/lsutils/nocalhost/internal/nhctl/fp"
 	"sort"
 	"strconv"
 )

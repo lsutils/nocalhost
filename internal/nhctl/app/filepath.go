@@ -6,7 +6,7 @@
 package app
 
 import (
-	"nocalhost/internal/nhctl/nocalhost_path"
+	"github.com/lsutils/nocalhost/internal/nhctl/nocalhost_path"
 	"os"
 	"path/filepath"
 )

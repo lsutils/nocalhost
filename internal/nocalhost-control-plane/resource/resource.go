@@ -22,11 +22,11 @@ import (
 	"github.com/envoyproxy/go-control-plane/pkg/resource/v3"
 	"github.com/envoyproxy/go-control-plane/pkg/wellknown"
 	"github.com/golang/protobuf/ptypes/wrappers"
+	"github.com/lsutils/nocalhost/internal/nocalhost-control-plane/common"
+	"github.com/lsutils/nocalhost/internal/nocalhost-control-plane/pkg/util"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/anypb"
 	"google.golang.org/protobuf/types/known/durationpb"
-	"nocalhost/internal/nocalhost-control-plane/common"
-	"nocalhost/internal/nocalhost-control-plane/pkg/util"
 	"time"
 )
 

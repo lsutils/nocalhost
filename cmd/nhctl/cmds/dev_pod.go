@@ -7,9 +7,9 @@ package cmds
 
 import (
 	"fmt"
+	"github.com/lsutils/nocalhost/cmd/nhctl/cmds/common"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
-	"nocalhost/cmd/nhctl/cmds/common"
 )
 
 func init() {

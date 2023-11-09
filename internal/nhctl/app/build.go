@@ -9,20 +9,20 @@ import (
 	"bufio"
 	"fmt"
 	"github.com/ghodss/yaml"
+	"github.com/lsutils/nocalhost/internal/nhctl/app_flags"
+	"github.com/lsutils/nocalhost/internal/nhctl/appmeta"
+	"github.com/lsutils/nocalhost/internal/nhctl/envsubst"
+	"github.com/lsutils/nocalhost/internal/nhctl/envsubst/parse"
+	"github.com/lsutils/nocalhost/internal/nhctl/fp"
+	"github.com/lsutils/nocalhost/internal/nhctl/nocalhost"
+	nocalhostDb "github.com/lsutils/nocalhost/internal/nhctl/nocalhost/db"
+	"github.com/lsutils/nocalhost/internal/nhctl/profile"
+	"github.com/lsutils/nocalhost/pkg/nhctl/clientgoutils"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
+	customyaml3 "github.com/lsutils/nocalhost/pkg/nhctl/utils/custom_yaml_v3"
 	"github.com/pkg/errors"
 	"io/ioutil"
 	k8serrors "k8s.io/apimachinery/pkg/api/errors"
-	"nocalhost/internal/nhctl/app_flags"
-	"nocalhost/internal/nhctl/appmeta"
-	"nocalhost/internal/nhctl/envsubst"
-	"nocalhost/internal/nhctl/envsubst/parse"
-	"nocalhost/internal/nhctl/fp"
-	"nocalhost/internal/nhctl/nocalhost"
-	nocalhostDb "nocalhost/internal/nhctl/nocalhost/db"
-	"nocalhost/internal/nhctl/profile"
-	"nocalhost/pkg/nhctl/clientgoutils"
-	"nocalhost/pkg/nhctl/log"
-	customyaml3 "nocalhost/pkg/nhctl/utils/custom_yaml_v3"
 	"os"
 	"path/filepath"
 	"regexp"
@@ -30,10 +30,11 @@ import (
 )
 
 // BuildApplication When a application is installed, something representing the application will build, including:
-// 1. An directory (NhctlAppDir) under $NhctlHomeDir/ns/$NameSpace will be created and initiated
-// 2. An config will be created and upload to the secret in the k8s cluster, it may come from an config file under
-//   .nocalhost in your git repository or an outer config file in your local file system
-// 3. An leveldb will be created under $NhctlAppDir, it will record the status of this application
+//  1. An directory (NhctlAppDir) under $NhctlHomeDir/ns/$NameSpace will be created and initiated
+//  2. An config will be created and upload to the secret in the k8s cluster, it may come from an config file under
+//     .nocalhost in your git repository or an outer config file in your local file system
+//  3. An leveldb will be created under $NhctlAppDir, it will record the status of this application
+//
 // build a new application
 func BuildApplication(name string, flags *app_flags.InstallFlags, kubeconfig string, namespace string) (
 	*Application, error,

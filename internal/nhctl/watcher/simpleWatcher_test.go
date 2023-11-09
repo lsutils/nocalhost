@@ -2,15 +2,15 @@ package watcher
 
 import (
 	"fmt"
+	_const "github.com/lsutils/nocalhost/internal/nhctl/const"
+	utils2 "github.com/lsutils/nocalhost/internal/nhctl/utils"
+	"github.com/lsutils/nocalhost/pkg/nhctl/clientgoutils"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 	kblabels "k8s.io/apimachinery/pkg/labels"
 	"k8s.io/apimachinery/pkg/runtime"
-	_const "nocalhost/internal/nhctl/const"
-	utils2 "nocalhost/internal/nhctl/utils"
-	"nocalhost/pkg/nhctl/clientgoutils"
-	"nocalhost/pkg/nhctl/log"
 	"os"
 	"testing"
 )

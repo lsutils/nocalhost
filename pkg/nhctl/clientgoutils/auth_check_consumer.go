@@ -2,11 +2,11 @@ package clientgoutils
 
 import (
 	"fmt"
+	"github.com/lsutils/nocalhost/internal/nhctl/daemon_client"
+	"github.com/lsutils/nocalhost/internal/nhctl/fp"
+	"github.com/lsutils/nocalhost/internal/nhctl/utils"
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
-	"nocalhost/internal/nhctl/daemon_client"
-	"nocalhost/internal/nhctl/fp"
-	"nocalhost/internal/nhctl/utils"
 	"sort"
 	"strings"
 )

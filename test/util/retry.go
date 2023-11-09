@@ -7,8 +7,8 @@ package util
 
 import (
 	"fmt"
-	"nocalhost/pkg/nhctl/clientgoutils"
-	"nocalhost/pkg/nhctl/log"
+	"github.com/lsutils/nocalhost/pkg/nhctl/clientgoutils"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"reflect"
 	"runtime"
 	"strings"

@@ -7,10 +7,10 @@ package nocalhost
 
 import (
 	"fmt"
+	"github.com/lsutils/nocalhost/internal/nhctl/common/base"
+	"github.com/lsutils/nocalhost/internal/nhctl/nocalhost_path"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"io/ioutil"
-	"nocalhost/internal/nhctl/common/base"
-	"nocalhost/internal/nhctl/nocalhost_path"
-	"nocalhost/pkg/nhctl/log"
 	"path/filepath"
 
 	"github.com/pkg/errors"

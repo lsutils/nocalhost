@@ -8,12 +8,12 @@ package pkg
 import (
 	"context"
 	"crypto/tls"
+	"github.com/lsutils/nocalhost/internal/nhctl/vpn/core"
+	"github.com/lsutils/nocalhost/internal/nhctl/vpn/tlsconfig"
+	"github.com/lsutils/nocalhost/internal/nhctl/vpn/tun"
 	"github.com/pkg/errors"
 	log "github.com/sirupsen/logrus"
 	"net"
-	"nocalhost/internal/nhctl/vpn/core"
-	"nocalhost/internal/nhctl/vpn/tlsconfig"
-	"nocalhost/internal/nhctl/vpn/tun"
 	"strings"
 )
 

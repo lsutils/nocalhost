@@ -7,13 +7,13 @@ package controller
 
 import (
 	"fmt"
+	"github.com/lsutils/nocalhost/internal/nhctl/profile"
+	"github.com/lsutils/nocalhost/internal/nhctl/syncthing"
+	"github.com/lsutils/nocalhost/internal/nhctl/utils"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"github.com/mitchellh/go-ps"
 	"github.com/pkg/errors"
 	"io/ioutil"
-	"nocalhost/internal/nhctl/profile"
-	"nocalhost/internal/nhctl/syncthing"
-	"nocalhost/internal/nhctl/utils"
-	"nocalhost/pkg/nhctl/log"
 	"runtime"
 	"strconv"
 )

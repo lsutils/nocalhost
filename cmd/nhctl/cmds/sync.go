@@ -6,10 +6,10 @@
 package cmds
 
 import (
-	"nocalhost/cmd/nhctl/cmds/common"
-	"nocalhost/cmd/nhctl/cmds/dev"
-	"nocalhost/internal/nhctl/app"
-	"nocalhost/internal/nhctl/model"
+	"github.com/lsutils/nocalhost/cmd/nhctl/cmds/common"
+	"github.com/lsutils/nocalhost/cmd/nhctl/cmds/dev"
+	"github.com/lsutils/nocalhost/internal/nhctl/app"
+	"github.com/lsutils/nocalhost/internal/nhctl/model"
 
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"

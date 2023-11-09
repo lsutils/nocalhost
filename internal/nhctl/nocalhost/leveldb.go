@@ -6,8 +6,8 @@
 package nocalhost
 
 import (
+	nocalhost_db "github.com/lsutils/nocalhost/internal/nhctl/nocalhost/db"
 	"github.com/pkg/errors"
-	nocalhost_db "nocalhost/internal/nhctl/nocalhost/db"
 )
 
 func ListAllFromApplicationDb(ns, appName, nid string) (map[string]string, error) {

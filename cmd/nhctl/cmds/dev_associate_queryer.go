@@ -7,14 +7,14 @@ package cmds
 
 import (
 	"fmt"
+	"github.com/lsutils/nocalhost/internal/nhctl/dev_dir"
+	"github.com/lsutils/nocalhost/internal/nhctl/syncthing/network/req"
+	"github.com/lsutils/nocalhost/internal/nhctl/utils"
+	k8sutil "github.com/lsutils/nocalhost/pkg/nhctl/k8sutils"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"github.com/spf13/cobra"
 	"gopkg.in/yaml.v3"
 	"k8s.io/apimachinery/pkg/util/json"
-	"nocalhost/internal/nhctl/dev_dir"
-	"nocalhost/internal/nhctl/syncthing/network/req"
-	"nocalhost/internal/nhctl/utils"
-	k8sutil "nocalhost/pkg/nhctl/k8sutils"
-	"nocalhost/pkg/nhctl/log"
 	"sort"
 )
 

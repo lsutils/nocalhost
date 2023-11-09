@@ -2,7 +2,7 @@ package envsubst
 
 import (
 	"fmt"
-	"nocalhost/internal/nhctl/fp"
+	"github.com/lsutils/nocalhost/internal/nhctl/fp"
 	"os"
 	"testing"
 )

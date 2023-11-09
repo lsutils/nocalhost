@@ -7,6 +7,8 @@ package appmeta_manager
 
 import (
 	"fmt"
+	"github.com/lsutils/nocalhost/internal/nhctl/watcher"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	v1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	kblabels "k8s.io/apimachinery/pkg/labels"
@@ -14,8 +16,6 @@ import (
 	"k8s.io/client-go/tools/cache"
 	"k8s.io/client-go/tools/clientcmd"
 	"k8s.io/client-go/util/flowcontrol"
-	"nocalhost/internal/nhctl/watcher"
-	"nocalhost/pkg/nhctl/log"
 	"sync"
 )
 

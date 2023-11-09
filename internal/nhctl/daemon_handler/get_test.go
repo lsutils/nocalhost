@@ -7,8 +7,8 @@ package daemon_handler
 
 import (
 	"fmt"
-	"nocalhost/internal/nhctl/daemon_server/command"
-	"nocalhost/internal/nhctl/utils"
+	"github.com/lsutils/nocalhost/internal/nhctl/daemon_server/command"
+	"github.com/lsutils/nocalhost/internal/nhctl/utils"
 	"path/filepath"
 	"testing"
 )

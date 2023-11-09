@@ -9,7 +9,7 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"nocalhost/internal/nhctl/profile"
+	"github.com/lsutils/nocalhost/internal/nhctl/profile"
 	"strconv"
 	"strings"
 

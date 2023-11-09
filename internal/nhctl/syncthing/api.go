@@ -1,7 +1,7 @@
 /*
 * Copyright (C) 2021 THL A29 Limited, a Tencent company.  All rights reserved.
 * This source code is licensed under the Apache License Version 2.0.
-*/
+ */
 
 package syncthing
 
@@ -14,7 +14,7 @@ import (
 	"path/filepath"
 	"time"
 
-	"nocalhost/pkg/nhctl/log"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 )
 
 type addAPIKeyTransport struct {
@@ -26,10 +26,10 @@ func (akt *addAPIKeyTransport) RoundTrip(req *http.Request) (*http.Response, err
 	return akt.T.RoundTrip(req)
 }
 
-//NewAPIClient returns a new syncthing api client configured to call the syncthing api
+// NewAPIClient returns a new syncthing api client configured to call the syncthing api
 func NewAPIClient() *http.Client {
 	return &http.Client{
-		Timeout: 30 * time.Second,
+		Timeout:   30 * time.Second,
 		Transport: &addAPIKeyTransport{http.DefaultTransport},
 	}
 }

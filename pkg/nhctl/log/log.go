@@ -7,8 +7,8 @@ package log
 
 import (
 	"fmt"
+	_const "github.com/lsutils/nocalhost/internal/nhctl/const"
 	"github.com/pkg/errors"
-	_const "nocalhost/internal/nhctl/const"
 	"os"
 	"path/filepath"
 	"runtime"

@@ -8,6 +8,7 @@ package clientgoutils
 import (
 	"context"
 	"fmt"
+	"github.com/lsutils/nocalhost/internal/nhctl/utils"
 	"io/ioutil"
 	"k8s.io/api/batch/v1beta1"
 	"k8s.io/apimachinery/pkg/api/meta"
@@ -15,7 +16,6 @@ import (
 	"k8s.io/apimachinery/pkg/labels"
 	"k8s.io/apimachinery/pkg/watch"
 	"k8s.io/client-go/util/flowcontrol"
-	"nocalhost/internal/nhctl/utils"
 	"path/filepath"
 	"sort"
 	"strconv"
@@ -26,6 +26,7 @@ import (
 
 	k8serrors "k8s.io/apimachinery/pkg/api/errors"
 
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	v1 "k8s.io/api/apps/v1"
 	batchv1 "k8s.io/api/batch/v1"
 	corev1 "k8s.io/api/core/v1"
@@ -46,7 +47,6 @@ import (
 	restclient "k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/clientcmd"
 	clientcmdapi "k8s.io/client-go/tools/clientcmd/api"
-	"nocalhost/pkg/nhctl/log"
 )
 
 type ClientGoUtils struct {

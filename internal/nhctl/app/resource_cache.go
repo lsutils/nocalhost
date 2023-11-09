@@ -7,13 +7,13 @@ package app
 
 import (
 	"encoding/json"
+	"github.com/lsutils/nocalhost/internal/nhctl/daemon_client"
+	"github.com/lsutils/nocalhost/internal/nhctl/daemon_handler/item"
+	"github.com/lsutils/nocalhost/internal/nhctl/utils"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"github.com/pkg/errors"
 	v1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"nocalhost/internal/nhctl/daemon_client"
-	"nocalhost/internal/nhctl/daemon_handler/item"
-	"nocalhost/internal/nhctl/utils"
-	"nocalhost/pkg/nhctl/log"
 	"reflect"
 )
 

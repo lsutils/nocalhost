@@ -6,9 +6,9 @@
 package daemon_handler
 
 import (
-	"nocalhost/internal/nhctl/daemon_server/command"
-	"nocalhost/internal/nhctl/resouce_cache"
-	"nocalhost/pkg/nhctl/log"
+	"github.com/lsutils/nocalhost/internal/nhctl/daemon_server/command"
+	"github.com/lsutils/nocalhost/internal/nhctl/resouce_cache"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 )
 
 // HandleKubeconfigOperationRequest this method will operate informer cache, remove or add informer

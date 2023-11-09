@@ -6,8 +6,8 @@
 package cmds
 
 import (
+	"github.com/lsutils/nocalhost/internal/nhctl/ui"
 	"github.com/spf13/cobra"
-	"nocalhost/internal/nhctl/ui"
 )
 
 func init() {

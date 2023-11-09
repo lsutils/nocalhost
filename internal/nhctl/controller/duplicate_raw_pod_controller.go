@@ -9,11 +9,11 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	_const "github.com/lsutils/nocalhost/internal/nhctl/const"
+	"github.com/lsutils/nocalhost/internal/nhctl/model"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"github.com/pkg/errors"
 	corev1 "k8s.io/api/core/v1"
-	_const "nocalhost/internal/nhctl/const"
-	"nocalhost/internal/nhctl/model"
-	"nocalhost/pkg/nhctl/log"
 	"time"
 )
 

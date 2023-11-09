@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"testing"
 
-	"nocalhost/pkg/nocalhost-api/pkg/log"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/log"
 )
 
 func Test_getVersionInfo(t *testing.T) {

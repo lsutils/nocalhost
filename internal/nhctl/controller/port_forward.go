@@ -7,12 +7,12 @@ package controller
 
 import (
 	"fmt"
+	"github.com/lsutils/nocalhost/internal/nhctl/daemon_client"
+	"github.com/lsutils/nocalhost/internal/nhctl/model"
+	"github.com/lsutils/nocalhost/internal/nhctl/profile"
+	"github.com/lsutils/nocalhost/internal/nhctl/utils"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"github.com/pkg/errors"
-	"nocalhost/internal/nhctl/daemon_client"
-	"nocalhost/internal/nhctl/model"
-	"nocalhost/internal/nhctl/profile"
-	"nocalhost/internal/nhctl/utils"
-	"nocalhost/pkg/nhctl/log"
 	"strconv"
 	"strings"
 	"time"

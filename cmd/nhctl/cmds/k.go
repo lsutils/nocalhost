@@ -6,8 +6,8 @@
 package cmds
 
 import (
+	"github.com/lsutils/nocalhost/cmd/nhctl/cmds/kube"
 	"github.com/spf13/cobra"
-	"nocalhost/cmd/nhctl/cmds/kube"
 )
 
 func init() {

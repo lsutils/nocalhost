@@ -7,15 +7,15 @@ package cmds
 
 import (
 	"fmt"
+	"github.com/lsutils/nocalhost/cmd/nhctl/cmds/common"
+	"github.com/lsutils/nocalhost/internal/nhctl/app"
+	"github.com/lsutils/nocalhost/internal/nhctl/controller"
+	"github.com/lsutils/nocalhost/pkg/nhctl/clientgoutils"
 	"github.com/spf13/cobra"
 	v1 "k8s.io/api/core/v1"
-	"nocalhost/cmd/nhctl/cmds/common"
-	"nocalhost/internal/nhctl/app"
-	"nocalhost/internal/nhctl/controller"
-	"nocalhost/pkg/nhctl/clientgoutils"
 	"path/filepath"
 
-	"nocalhost/pkg/nhctl/log"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 )
 
 func init() {

@@ -8,7 +8,7 @@ package application_user
 import (
 	"errors"
 	"github.com/jinzhu/gorm"
-	"nocalhost/internal/nocalhost-api/model"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/model"
 )
 
 type ApplicationUserRepoBase struct {

@@ -6,8 +6,8 @@
 package app
 
 import (
+	"github.com/lsutils/nocalhost/pkg/nhctl/tools"
 	"github.com/pkg/errors"
-	"nocalhost/pkg/nhctl/tools"
 	"os"
 	"strings"
 )

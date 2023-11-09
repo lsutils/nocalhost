@@ -6,13 +6,13 @@
 package main
 
 import (
-	_const "nocalhost/internal/nhctl/const"
-	"nocalhost/internal/nhctl/utils"
-	"nocalhost/pkg/nhctl/log"
-	"nocalhost/test/runner"
-	"nocalhost/test/suite"
-	"nocalhost/test/testcase"
-	"nocalhost/test/util"
+	_const "github.com/lsutils/nocalhost/internal/nhctl/const"
+	"github.com/lsutils/nocalhost/internal/nhctl/utils"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
+	"github.com/lsutils/nocalhost/test/runner"
+	"github.com/lsutils/nocalhost/test/suite"
+	"github.com/lsutils/nocalhost/test/testcase"
+	"github.com/lsutils/nocalhost/test/util"
 	"os"
 	"path/filepath"
 	"sync"

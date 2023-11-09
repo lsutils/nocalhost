@@ -7,13 +7,13 @@ package hub
 
 import (
 	"fmt"
+	"github.com/lsutils/nocalhost/internal/nhctl/common/base"
+	"github.com/lsutils/nocalhost/internal/nhctl/nocalhost_path"
+	"github.com/lsutils/nocalhost/internal/nhctl/profile"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"github.com/pkg/errors"
 	"io/ioutil"
 	"k8s.io/apimachinery/pkg/util/yaml"
-	"nocalhost/internal/nhctl/common/base"
-	"nocalhost/internal/nhctl/nocalhost_path"
-	"nocalhost/internal/nhctl/profile"
-	"nocalhost/pkg/nhctl/log"
 	"os"
 	"path/filepath"
 )

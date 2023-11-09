@@ -9,6 +9,10 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	"github.com/lsutils/nocalhost/internal/nhctl/common/base"
+	_const "github.com/lsutils/nocalhost/internal/nhctl/const"
+	"github.com/lsutils/nocalhost/internal/nhctl/controller"
+	"github.com/lsutils/nocalhost/internal/nhctl/nocalhost"
 	"github.com/pkg/errors"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
@@ -18,10 +22,6 @@ import (
 	pkgresource "k8s.io/cli-runtime/pkg/resource"
 	runtimeresource "k8s.io/cli-runtime/pkg/resource"
 	cmdutil "k8s.io/kubectl/pkg/cmd/util"
-	"nocalhost/internal/nhctl/common/base"
-	_const "nocalhost/internal/nhctl/const"
-	"nocalhost/internal/nhctl/controller"
-	"nocalhost/internal/nhctl/nocalhost"
 	"strings"
 )
 

@@ -9,9 +9,9 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	"github.com/lsutils/nocalhost/internal/nhctl/fp"
+	"github.com/lsutils/nocalhost/test/runner"
 	"github.com/pkg/errors"
-	"nocalhost/internal/nhctl/fp"
-	"nocalhost/test/runner"
 	"strings"
 	"time"
 )

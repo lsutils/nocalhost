@@ -7,10 +7,10 @@ package cmds
 
 import (
 	"context"
+	"github.com/lsutils/nocalhost/internal/nhctl/vpn/pkg"
+	"github.com/lsutils/nocalhost/internal/nhctl/vpn/util"
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
-	"nocalhost/internal/nhctl/vpn/pkg"
-	"nocalhost/internal/nhctl/vpn/util"
 )
 
 var config pkg.Route

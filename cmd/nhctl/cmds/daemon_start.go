@@ -1,15 +1,15 @@
 /*
 * Copyright (C) 2021 THL A29 Limited, a Tencent company.  All rights reserved.
 * This source code is licensed under the Apache License Version 2.0.
-*/
+ */
 
 package cmds
 
 import (
+	"github.com/lsutils/nocalhost/internal/nhctl/daemon_common"
+	"github.com/lsutils/nocalhost/internal/nhctl/daemon_server"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"github.com/spf13/cobra"
-	"nocalhost/internal/nhctl/daemon_common"
-	"nocalhost/internal/nhctl/daemon_server"
-	"nocalhost/pkg/nhctl/log"
 )
 
 func init() {

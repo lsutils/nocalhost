@@ -6,12 +6,12 @@
 package install
 
 import (
-	"nocalhost/cmd/nhctl/cmds/common"
-	"nocalhost/internal/nhctl/const"
-	"nocalhost/internal/nhctl/controller"
-	"nocalhost/internal/nhctl/nocalhost"
-	"nocalhost/internal/nhctl/utils"
-	"nocalhost/pkg/nhctl/log"
+	"github.com/lsutils/nocalhost/cmd/nhctl/cmds/common"
+	"github.com/lsutils/nocalhost/internal/nhctl/const"
+	"github.com/lsutils/nocalhost/internal/nhctl/controller"
+	"github.com/lsutils/nocalhost/internal/nhctl/nocalhost"
+	"github.com/lsutils/nocalhost/internal/nhctl/utils"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"

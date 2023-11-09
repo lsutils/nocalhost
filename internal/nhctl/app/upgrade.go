@@ -7,15 +7,15 @@ package app
 
 import (
 	"fmt"
+	flag "github.com/lsutils/nocalhost/internal/nhctl/app_flags"
+	"github.com/lsutils/nocalhost/internal/nhctl/appmeta"
+	"github.com/lsutils/nocalhost/internal/nhctl/fp"
+	"github.com/lsutils/nocalhost/pkg/nhctl/clientgoutils"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
+	"github.com/lsutils/nocalhost/pkg/nhctl/tools"
 	"github.com/pkg/errors"
 	"io/ioutil"
 	"k8s.io/cli-runtime/pkg/resource"
-	flag "nocalhost/internal/nhctl/app_flags"
-	"nocalhost/internal/nhctl/appmeta"
-	"nocalhost/internal/nhctl/fp"
-	"nocalhost/pkg/nhctl/clientgoutils"
-	"nocalhost/pkg/nhctl/log"
-	"nocalhost/pkg/nhctl/tools"
 	"os"
 )
 

@@ -6,9 +6,9 @@
 package cluster_scope
 
 import (
-	"nocalhost/internal/nocalhost-api/model"
-	"nocalhost/internal/nocalhost-api/service"
-	"nocalhost/pkg/nhctl/log"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/model"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/service"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"sync"
 )
 

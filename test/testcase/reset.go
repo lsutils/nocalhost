@@ -7,12 +7,12 @@ package testcase
 
 import (
 	"context"
+	"github.com/lsutils/nocalhost/internal/nhctl/common/base"
+	"github.com/lsutils/nocalhost/internal/nhctl/controller"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
+	"github.com/lsutils/nocalhost/test/runner"
 	"github.com/pkg/errors"
 	"io/ioutil"
-	"nocalhost/internal/nhctl/common/base"
-	"nocalhost/internal/nhctl/controller"
-	"nocalhost/pkg/nhctl/log"
-	"nocalhost/test/runner"
 	"os"
 	"sigs.k8s.io/yaml"
 )

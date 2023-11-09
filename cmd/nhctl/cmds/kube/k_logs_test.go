@@ -6,7 +6,7 @@
 package kube
 
 import (
-	"nocalhost/cmd/nhctl/cmds/common"
+	"github.com/lsutils/nocalhost/cmd/nhctl/cmds/common"
 	"testing"
 )
 

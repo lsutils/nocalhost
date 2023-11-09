@@ -7,8 +7,8 @@ package cluster_user
 
 import (
 	"github.com/jinzhu/gorm"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/model"
 	"github.com/pkg/errors"
-	"nocalhost/internal/nocalhost-api/model"
 )
 
 type ClusterUserRepoBase struct {

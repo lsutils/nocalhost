@@ -8,14 +8,14 @@ package resouce_cache
 import (
 	"crypto/sha1"
 	"fmt"
+	"github.com/lsutils/nocalhost/internal/nhctl/daemon_client"
+	"github.com/lsutils/nocalhost/internal/nhctl/daemon_server/command"
+	"github.com/lsutils/nocalhost/pkg/nhctl/k8sutils"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/apimachinery/pkg/util/sets"
 	"k8s.io/client-go/informers"
 	"k8s.io/client-go/tools/cache"
-	"nocalhost/internal/nhctl/daemon_client"
-	"nocalhost/internal/nhctl/daemon_server/command"
-	"nocalhost/pkg/nhctl/k8sutils"
 	"sync"
 	"time"
 )

@@ -7,17 +7,17 @@ package common
 
 import (
 	"fmt"
+	"github.com/lsutils/nocalhost/internal/nhctl/app"
+	"github.com/lsutils/nocalhost/internal/nhctl/app_flags"
+	"github.com/lsutils/nocalhost/internal/nhctl/appmeta"
+	"github.com/lsutils/nocalhost/internal/nhctl/coloredoutput"
+	"github.com/lsutils/nocalhost/internal/nhctl/fp"
+	"github.com/lsutils/nocalhost/internal/nhctl/nocalhost"
+	"github.com/lsutils/nocalhost/internal/nhctl/utils"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	errors2 "github.com/pkg/errors"
 	"gopkg.in/yaml.v3"
 	k8serrors "k8s.io/apimachinery/pkg/api/errors"
-	"nocalhost/internal/nhctl/app"
-	"nocalhost/internal/nhctl/app_flags"
-	"nocalhost/internal/nhctl/appmeta"
-	"nocalhost/internal/nhctl/coloredoutput"
-	"nocalhost/internal/nhctl/fp"
-	"nocalhost/internal/nhctl/nocalhost"
-	"nocalhost/internal/nhctl/utils"
-	"nocalhost/pkg/nhctl/log"
 )
 
 func InitDefaultApplicationInCurrentNs(appName, namespace, kubeconfigPath string) (*app.Application, error) {

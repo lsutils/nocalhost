@@ -7,16 +7,16 @@ package cluster_scope
 
 import (
 	"fmt"
+	_const "github.com/lsutils/nocalhost/internal/nhctl/const"
+	"github.com/lsutils/nocalhost/internal/nhctl/watcher"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/service/cooperator/util"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/log"
 	rbacv1 "k8s.io/api/rbac/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	kblabels "k8s.io/apimachinery/pkg/labels"
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/tools/cache"
 	"k8s.io/client-go/tools/clientcmd"
-	_const "nocalhost/internal/nhctl/const"
-	"nocalhost/internal/nhctl/watcher"
-	"nocalhost/internal/nocalhost-api/service/cooperator/util"
-	"nocalhost/pkg/nocalhost-api/pkg/log"
 	"strings"
 	"sync"
 )

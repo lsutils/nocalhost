@@ -1,13 +1,13 @@
 /*
 * Copyright (C) 2021 THL A29 Limited, a Tencent company.  All rights reserved.
 * This source code is licensed under the Apache License Version 2.0.
-*/
+ */
 
 package app
 
 import (
-	"nocalhost/internal/nhctl/appmeta"
-	"nocalhost/pkg/nhctl/clientgoutils"
+	"github.com/lsutils/nocalhost/internal/nhctl/appmeta"
+	"github.com/lsutils/nocalhost/pkg/nhctl/clientgoutils"
 )
 
 func (a *Application) GetType() appmeta.AppType {

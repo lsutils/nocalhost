@@ -6,7 +6,7 @@
 package controller
 
 import (
-	"nocalhost/internal/nhctl/profile"
+	"github.com/lsutils/nocalhost/internal/nhctl/profile"
 
 	corev1 "k8s.io/api/core/v1"
 )

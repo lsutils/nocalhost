@@ -19,6 +19,10 @@ import (
 	"sync"
 	"time"
 
+	_const "github.com/lsutils/nocalhost/internal/nhctl/const"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/global"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/errno"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/log"
 	istio "istio.io/client-go/pkg/clientset/versioned"
 	apiappsV1 "k8s.io/api/apps/v1"
 	v1 "k8s.io/api/apps/v1"
@@ -40,10 +44,6 @@ import (
 	restclient "k8s.io/client-go/rest"
 	"k8s.io/client-go/restmapper"
 	"k8s.io/client-go/tools/clientcmd"
-	_const "nocalhost/internal/nhctl/const"
-	"nocalhost/internal/nocalhost-api/global"
-	"nocalhost/pkg/nocalhost-api/pkg/errno"
-	"nocalhost/pkg/nocalhost-api/pkg/log"
 )
 
 const (
@@ -928,7 +928,8 @@ func (c *GoClient) RemoveRoleBinding(name, namespace, toServiceAccount, toServic
 
 // create user role for single namespace
 // name default nocalhost-role
-//  default create every developer can access all resource for he's namespace
+//
+//	default create every developer can access all resource for he's namespace
 func (c *GoClient) CreateRole(name, namespace string) (bool, error) {
 	role := &rbacv1.Role{}
 	role.ObjectMeta = metav1.ObjectMeta{

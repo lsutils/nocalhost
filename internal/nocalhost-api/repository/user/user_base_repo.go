@@ -11,8 +11,8 @@ import (
 
 	"github.com/jinzhu/gorm"
 
-	"nocalhost/internal/nocalhost-api/model"
-	"nocalhost/pkg/nocalhost-api/pkg/log"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/model"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/log"
 )
 
 // BaseRepo

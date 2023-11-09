@@ -7,13 +7,13 @@ package cmds
 
 import (
 	"fmt"
+	"github.com/lsutils/nocalhost/internal/nhctl/envsubst"
+	"github.com/lsutils/nocalhost/internal/nhctl/fp"
+	"github.com/lsutils/nocalhost/internal/nhctl/profile"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
+	customyaml3 "github.com/lsutils/nocalhost/pkg/nhctl/utils/custom_yaml_v3"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
-	"nocalhost/internal/nhctl/envsubst"
-	"nocalhost/internal/nhctl/fp"
-	"nocalhost/internal/nhctl/profile"
-	"nocalhost/pkg/nhctl/log"
-	customyaml3 "nocalhost/pkg/nhctl/utils/custom_yaml_v3"
 )
 
 var renderOps = &RenderOps{}

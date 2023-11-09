@@ -1,7 +1,7 @@
 package clientgoutils
 
 import (
-	"nocalhost/internal/nhctl/fp"
+	"github.com/lsutils/nocalhost/internal/nhctl/fp"
 	"testing"
 )
 

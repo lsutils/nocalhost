@@ -7,6 +7,7 @@ package handler
 
 import (
 	"context"
+	"github.com/lsutils/nocalhost/internal/nhctl/vpn/util"
 	"github.com/pkg/errors"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
@@ -14,7 +15,6 @@ import (
 	"k8s.io/cli-runtime/pkg/resource"
 	coreV1 "k8s.io/client-go/kubernetes/typed/core/v1"
 	cmdutil "k8s.io/kubectl/pkg/cmd/util"
-	"nocalhost/internal/nhctl/vpn/util"
 )
 
 type ServiceHandler struct {

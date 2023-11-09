@@ -8,11 +8,11 @@ package cluster_user
 import (
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/gin/binding"
-	"nocalhost/internal/nocalhost-api/service/cooperator/cluster_scope"
-	"nocalhost/internal/nocalhost-api/service/cooperator/ns_scope"
-	"nocalhost/pkg/nocalhost-api/app/api"
-	"nocalhost/pkg/nocalhost-api/pkg/errno"
-	"nocalhost/pkg/nocalhost-api/pkg/log"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/service/cooperator/cluster_scope"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/service/cooperator/ns_scope"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/app/api"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/errno"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/log"
 )
 
 func Share(c *gin.Context) {

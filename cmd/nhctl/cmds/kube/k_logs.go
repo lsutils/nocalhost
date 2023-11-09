@@ -6,11 +6,11 @@
 package kube
 
 import (
+	"github.com/lsutils/nocalhost/cmd/nhctl/cmds/common"
+	"github.com/lsutils/nocalhost/pkg/nhctl/clientgoutils"
 	"github.com/spf13/cobra"
 	"k8s.io/kubectl/pkg/cmd/logs"
 	cmdutil "k8s.io/kubectl/pkg/cmd/util"
-	"nocalhost/cmd/nhctl/cmds/common"
-	"nocalhost/pkg/nhctl/clientgoutils"
 )
 
 var LogOptions *logs.LogsOptions

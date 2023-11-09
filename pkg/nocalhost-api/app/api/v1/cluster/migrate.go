@@ -8,16 +8,16 @@ package cluster
 import (
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/gin/binding"
+	_const "github.com/lsutils/nocalhost/internal/nhctl/const"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/service"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/service/cooperator/ns_scope"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/app/api"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/app/api/v1/cluster_user"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/app/router/ginbase"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/errno"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/utils"
 	"github.com/spf13/cast"
-	_const "nocalhost/internal/nhctl/const"
-	"nocalhost/internal/nocalhost-api/service"
-	"nocalhost/internal/nocalhost-api/service/cooperator/ns_scope"
-	"nocalhost/pkg/nhctl/log"
-	"nocalhost/pkg/nocalhost-api/app/api"
-	"nocalhost/pkg/nocalhost-api/app/api/v1/cluster_user"
-	"nocalhost/pkg/nocalhost-api/app/router/ginbase"
-	"nocalhost/pkg/nocalhost-api/pkg/errno"
-	"nocalhost/pkg/nocalhost-api/pkg/utils"
 )
 
 func Migrate(c *gin.Context) {

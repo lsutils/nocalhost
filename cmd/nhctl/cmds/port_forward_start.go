@@ -6,13 +6,13 @@
 package cmds
 
 import (
+	"github.com/lsutils/nocalhost/cmd/nhctl/cmds/common"
+	"github.com/lsutils/nocalhost/internal/nhctl/app"
+	"github.com/lsutils/nocalhost/internal/nhctl/daemon_client"
+	"github.com/lsutils/nocalhost/internal/nhctl/utils"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
-	"nocalhost/cmd/nhctl/cmds/common"
-	"nocalhost/internal/nhctl/app"
-	"nocalhost/internal/nhctl/daemon_client"
-	"nocalhost/internal/nhctl/utils"
-	"nocalhost/pkg/nhctl/log"
 )
 
 var portForwardOptions = &app.PortForwardOptions{}

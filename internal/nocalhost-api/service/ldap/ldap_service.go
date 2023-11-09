@@ -1,8 +1,8 @@
 package ldap
 
 import (
-	"nocalhost/internal/nocalhost-api/model"
-	"nocalhost/internal/nocalhost-api/repository/ldap"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/model"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/repository/ldap"
 )
 
 type Ldap struct {

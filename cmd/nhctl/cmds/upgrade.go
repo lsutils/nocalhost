@@ -7,13 +7,13 @@ package cmds
 
 import (
 	"context"
+	"github.com/lsutils/nocalhost/cmd/nhctl/cmds/common"
+	"github.com/lsutils/nocalhost/internal/nhctl/controller"
+	"github.com/lsutils/nocalhost/internal/nhctl/profile"
+	"github.com/lsutils/nocalhost/internal/nhctl/utils"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
-	"nocalhost/cmd/nhctl/cmds/common"
-	"nocalhost/internal/nhctl/controller"
-	"nocalhost/internal/nhctl/profile"
-	"nocalhost/internal/nhctl/utils"
-	"nocalhost/pkg/nhctl/log"
 	"time"
 )
 

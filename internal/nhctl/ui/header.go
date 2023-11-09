@@ -7,7 +7,7 @@ package ui
 
 import (
 	"github.com/derailed/tview"
-	"nocalhost/internal/nhctl/daemon_common"
+	"github.com/lsutils/nocalhost/internal/nhctl/daemon_common"
 )
 
 func (t *TviewApplication) RefreshHeader() {

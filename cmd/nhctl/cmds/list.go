@@ -8,22 +8,22 @@ package cmds
 import (
 	"encoding/json"
 	"fmt"
+	common2 "github.com/lsutils/nocalhost/cmd/nhctl/cmds/common"
+	"github.com/lsutils/nocalhost/internal/nhctl/app_flags"
+	"github.com/lsutils/nocalhost/internal/nhctl/appmeta"
+	"github.com/lsutils/nocalhost/internal/nhctl/common"
+	_const "github.com/lsutils/nocalhost/internal/nhctl/const"
+	"github.com/lsutils/nocalhost/internal/nhctl/daemon_handler"
+	"github.com/lsutils/nocalhost/internal/nhctl/model"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"gopkg.in/yaml.v3"
-	common2 "nocalhost/cmd/nhctl/cmds/common"
-	"nocalhost/internal/nhctl/app_flags"
-	"nocalhost/internal/nhctl/appmeta"
-	"nocalhost/internal/nhctl/common"
-	_const "nocalhost/internal/nhctl/const"
-	"nocalhost/internal/nhctl/daemon_handler"
-	"nocalhost/internal/nhctl/model"
-	"nocalhost/pkg/nhctl/log"
 	"os"
 	"strconv"
 
+	"github.com/lsutils/nocalhost/internal/nhctl/app"
+	"github.com/lsutils/nocalhost/internal/nhctl/nocalhost"
 	"github.com/olekukonko/tablewriter"
 	"github.com/spf13/cobra"
-	"nocalhost/internal/nhctl/app"
-	"nocalhost/internal/nhctl/nocalhost"
 )
 
 var listFlags = &app_flags.ListFlags{}

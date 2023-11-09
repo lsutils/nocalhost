@@ -6,7 +6,7 @@
 package app
 
 import (
-	"nocalhost/internal/nhctl/profile"
+	"github.com/lsutils/nocalhost/internal/nhctl/profile"
 )
 
 // Used by dep

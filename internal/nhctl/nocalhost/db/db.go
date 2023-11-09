@@ -6,8 +6,8 @@
 package db
 
 import (
-	"nocalhost/internal/nhctl/dbutils"
-	"nocalhost/internal/nhctl/nocalhost_path"
+	"github.com/lsutils/nocalhost/internal/nhctl/dbutils"
+	"github.com/lsutils/nocalhost/internal/nhctl/nocalhost_path"
 	"path/filepath"
 )
 

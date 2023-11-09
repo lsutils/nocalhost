@@ -3,10 +3,10 @@ package testcase
 import (
 	"context"
 	"fmt"
+	"github.com/lsutils/nocalhost/test/runner"
+	"github.com/lsutils/nocalhost/test/util"
 	"github.com/pkg/errors"
 	"io/ioutil"
-	"nocalhost/test/runner"
-	"nocalhost/test/util"
 	"os"
 	"os/exec"
 	"path/filepath"
@@ -17,19 +17,20 @@ import (
 // InstallBookInfoUseHelmVals install bookinfo use .nocalhost cfg:
 //
 // application:
-//  helmVals:
-//    service:
-//      port: 9082
 //
-//    bookinfo:
-//      deploy:
-//        resources:
-//          limits:
-//            cpu: 1m
-//            memory: 1Mi
-//          requests:
-//            cpu: 1m
-//            memory: 1Mi
+//	helmVals:
+//	  service:
+//	    port: 9082
+//
+//	  bookinfo:
+//	    deploy:
+//	      resources:
+//	        limits:
+//	          cpu: 1m
+//	          memory: 1Mi
+//	        requests:
+//	          cpu: 1m
+//	          memory: 1Mi
 //
 // and should make sure helm's template is correctly rendered
 func InstallBookInfoUseHelmVals(c runner.Client, branch string, appName string) error {

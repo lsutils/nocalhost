@@ -6,8 +6,8 @@
 package app
 
 import (
+	_const "github.com/lsutils/nocalhost/internal/nhctl/const"
 	v1 "k8s.io/api/core/v1"
-	_const "nocalhost/internal/nhctl/const"
 )
 
 func (a *Application) Exec(pod v1.Pod, container string, commands []string) error {

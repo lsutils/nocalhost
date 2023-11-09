@@ -7,12 +7,12 @@ package controller
 
 import (
 	"fmt"
+	"github.com/lsutils/nocalhost/internal/nhctl/common/base"
+	"github.com/lsutils/nocalhost/internal/nhctl/hub"
+	"github.com/lsutils/nocalhost/internal/nhctl/nocalhost"
+	"github.com/lsutils/nocalhost/internal/nhctl/profile"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"github.com/pkg/errors"
-	"nocalhost/internal/nhctl/common/base"
-	"nocalhost/internal/nhctl/hub"
-	"nocalhost/internal/nhctl/nocalhost"
-	"nocalhost/internal/nhctl/profile"
-	"nocalhost/pkg/nhctl/log"
 )
 
 //func (c *Controller) SaveConfigToProfile(config *profile.ServiceConfigV2) error {

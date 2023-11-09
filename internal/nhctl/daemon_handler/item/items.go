@@ -5,7 +5,7 @@
 
 package item
 
-import "nocalhost/internal/nhctl/profile"
+import "github.com/lsutils/nocalhost/internal/nhctl/profile"
 
 type Result struct {
 	Namespace   string `json:"namespace" yaml:"namespace"`

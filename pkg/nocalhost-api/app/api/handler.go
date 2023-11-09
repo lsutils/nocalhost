@@ -7,16 +7,16 @@ package api
 
 import (
 	"fmt"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/napp"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/log"
 	"github.com/spf13/viper"
 	"net/http"
-	"nocalhost/pkg/nocalhost-api/napp"
-	"nocalhost/pkg/nocalhost-api/pkg/log"
 	"os"
 	"runtime/debug"
 
 	"github.com/gin-gonic/gin"
 
-	"nocalhost/pkg/nocalhost-api/pkg/errno"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/errno"
 )
 
 // Response api

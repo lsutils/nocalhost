@@ -8,8 +8,8 @@ package tun
 import (
 	"errors"
 	"fmt"
+	"github.com/lsutils/nocalhost/internal/nhctl/vpn/util"
 	"net"
-	"nocalhost/internal/nhctl/vpn/util"
 	"syscall"
 
 	"github.com/docker/libcontainer/netlink"

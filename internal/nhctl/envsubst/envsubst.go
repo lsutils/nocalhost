@@ -6,8 +6,8 @@
 package envsubst
 
 import (
-	"nocalhost/internal/nhctl/envsubst/parse"
-	"nocalhost/internal/nhctl/fp"
+	"github.com/lsutils/nocalhost/internal/nhctl/envsubst/parse"
+	"github.com/lsutils/nocalhost/internal/nhctl/fp"
 	"os"
 )
 

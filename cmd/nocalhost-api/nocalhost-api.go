@@ -9,19 +9,19 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"nocalhost/internal/nocalhost-api/global"
-	"nocalhost/pkg/nocalhost-api/app/api/v1/cluster"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/global"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/app/api/v1/cluster"
 	"os"
 
 	"github.com/gin-gonic/gin"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/service"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/app/api"
+	routers "github.com/lsutils/nocalhost/pkg/nocalhost-api/app/router"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/conf"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/napp"
+	v "github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/version"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"github.com/spf13/pflag"
-	"nocalhost/internal/nocalhost-api/service"
-	"nocalhost/pkg/nocalhost-api/app/api"
-	routers "nocalhost/pkg/nocalhost-api/app/router"
-	"nocalhost/pkg/nocalhost-api/conf"
-	"nocalhost/pkg/nocalhost-api/napp"
-	v "nocalhost/pkg/nocalhost-api/pkg/version"
 )
 
 var GIT_COMMIT_SHA string

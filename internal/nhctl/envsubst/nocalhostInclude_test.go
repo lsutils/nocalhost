@@ -3,8 +3,8 @@ package envsubst
 import (
 	"errors"
 	"fmt"
+	"github.com/lsutils/nocalhost/internal/nhctl/fp"
 	"gopkg.in/yaml.v3"
-	"nocalhost/internal/nhctl/fp"
 	"os"
 	"reflect"
 	"testing"

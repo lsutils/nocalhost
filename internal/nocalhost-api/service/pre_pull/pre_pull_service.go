@@ -7,8 +7,8 @@ package pre_pull
 
 import (
 	"context"
-	"nocalhost/internal/nocalhost-api/model"
-	"nocalhost/internal/nocalhost-api/repository/pre_pull"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/model"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/repository/pre_pull"
 )
 
 type PrePull struct {

@@ -7,10 +7,10 @@ package daemon_common
 
 import (
 	"context"
+	"github.com/lsutils/nocalhost/internal/nhctl/syncthing/daemon"
+	"github.com/lsutils/nocalhost/internal/nhctl/utils"
 	"github.com/pkg/errors"
 	"io/ioutil"
-	"nocalhost/internal/nhctl/syncthing/daemon"
-	"nocalhost/internal/nhctl/utils"
 	"path/filepath"
 )
 

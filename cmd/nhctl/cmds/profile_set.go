@@ -6,11 +6,11 @@
 package cmds
 
 import (
+	"github.com/lsutils/nocalhost/cmd/nhctl/cmds/common"
+	"github.com/lsutils/nocalhost/internal/nhctl/profile"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
-	"nocalhost/cmd/nhctl/cmds/common"
-	"nocalhost/internal/nhctl/profile"
-	"nocalhost/pkg/nhctl/log"
 )
 
 var configKey string

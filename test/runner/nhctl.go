@@ -6,10 +6,10 @@
 package runner
 
 import (
+	"github.com/lsutils/nocalhost/pkg/nhctl/clientgoutils"
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/util/homedir"
 	"math/rand"
-	"nocalhost/pkg/nhctl/clientgoutils"
 	"os/exec"
 	"path/filepath"
 	"sync"

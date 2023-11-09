@@ -7,7 +7,7 @@ package pod_controller
 
 import (
 	"context"
-	"nocalhost/internal/nhctl/model"
+	"github.com/lsutils/nocalhost/internal/nhctl/model"
 )
 
 type PodController interface {

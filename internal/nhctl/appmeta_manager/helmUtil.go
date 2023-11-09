@@ -10,11 +10,11 @@ import (
 	"compress/gzip"
 	"encoding/base64"
 	"encoding/json"
+	"github.com/lsutils/nocalhost/internal/nhctl/appmeta"
+	profile2 "github.com/lsutils/nocalhost/internal/nhctl/profile"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"github.com/pkg/errors"
 	"io/ioutil"
-	"nocalhost/internal/nhctl/appmeta"
-	profile2 "nocalhost/internal/nhctl/profile"
-	"nocalhost/pkg/nhctl/log"
 	"strings"
 )
 

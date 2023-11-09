@@ -7,10 +7,10 @@ package utils
 
 import (
 	"fmt"
+	"github.com/lsutils/nocalhost/internal/nhctl/syncthing/terminate"
+	"github.com/lsutils/nocalhost/internal/nhctl/utils"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"io"
-	"nocalhost/internal/nhctl/syncthing/terminate"
-	"nocalhost/internal/nhctl/utils"
-	"nocalhost/pkg/nhctl/log"
 	"os/exec"
 	"path/filepath"
 	"strconv"

@@ -6,7 +6,7 @@
 package registry
 
 import (
-	"nocalhost/pkg/nocalhost-api/pkg/log"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/log"
 	"testing"
 )
 
@@ -27,7 +27,7 @@ func TestNew(t *testing.T) {
 			name: "get tags from coding",
 			args: args{
 				registryURL: "https://nocalhost-docker.pkg.coding.net",
-				repository:  "nocalhost/public/nocalhost-api",
+				repository:  "github.com/lsutils/nocalhost/public/nocalhost-api",
 				user:        "",
 				password:    "",
 			},

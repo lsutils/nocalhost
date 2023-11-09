@@ -7,8 +7,8 @@ package daemon
 
 import (
 	"fmt"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"github.com/pkg/errors"
-	"nocalhost/pkg/nhctl/log"
 	"os"
 	"os/exec"
 	"strconv"

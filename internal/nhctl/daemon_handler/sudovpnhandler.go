@@ -3,15 +3,15 @@ package daemon_handler
 import (
 	"context"
 	"fmt"
+	"github.com/lsutils/nocalhost/internal/nhctl/daemon_server/command"
+	"github.com/lsutils/nocalhost/internal/nhctl/vpn/dns"
+	"github.com/lsutils/nocalhost/internal/nhctl/vpn/pkg"
+	"github.com/lsutils/nocalhost/internal/nhctl/vpn/remote"
+	"github.com/lsutils/nocalhost/internal/nhctl/vpn/util"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"github.com/sirupsen/logrus"
 	"io"
 	"k8s.io/client-go/util/retry"
-	"nocalhost/internal/nhctl/daemon_server/command"
-	"nocalhost/internal/nhctl/vpn/dns"
-	"nocalhost/internal/nhctl/vpn/pkg"
-	"nocalhost/internal/nhctl/vpn/remote"
-	"nocalhost/internal/nhctl/vpn/util"
-	"nocalhost/pkg/nhctl/log"
 	"os"
 	"runtime"
 	"sync"
@@ -21,7 +21,7 @@ import (
 // keep it in memory
 var connected *pkg.ConnectOptions
 
-//var done = make(chan struct{})
+// var done = make(chan struct{})
 var lock = &sync.Mutex{}
 
 func HandleSudoVPNStatus() (interface{}, error) {

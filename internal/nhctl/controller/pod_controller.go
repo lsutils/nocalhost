@@ -6,8 +6,8 @@
 package controller
 
 import (
-	"nocalhost/internal/nhctl/common/base"
-	"nocalhost/internal/nhctl/pod_controller"
+	"github.com/lsutils/nocalhost/internal/nhctl/common/base"
+	"github.com/lsutils/nocalhost/internal/nhctl/pod_controller"
 )
 
 func (c *Controller) BuildPodController() pod_controller.PodController {

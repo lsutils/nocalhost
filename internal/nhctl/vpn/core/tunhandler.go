@@ -9,12 +9,12 @@ package core
 import (
 	"context"
 	"errors"
+	"github.com/lsutils/nocalhost/internal/nhctl/vpn/util"
 	log "github.com/sirupsen/logrus"
 	"github.com/songgao/water/waterutil"
 	"golang.org/x/net/ipv4"
 	"golang.org/x/net/ipv6"
 	"net"
-	"nocalhost/internal/nhctl/vpn/util"
 	"sync"
 )
 

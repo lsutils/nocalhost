@@ -8,9 +8,9 @@ package core
 import (
 	"context"
 	"crypto/tls"
+	"github.com/lsutils/nocalhost/internal/nhctl/vpn/tlsconfig"
+	"github.com/lsutils/nocalhost/internal/nhctl/vpn/util"
 	"net"
-	"nocalhost/internal/nhctl/vpn/tlsconfig"
-	"nocalhost/internal/nhctl/vpn/util"
 )
 
 type tcpTransporter struct{}

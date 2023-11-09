@@ -6,15 +6,15 @@
 package common
 
 import (
+	"github.com/lsutils/nocalhost/internal/nhctl/app"
+	"github.com/lsutils/nocalhost/internal/nhctl/common"
+	_const "github.com/lsutils/nocalhost/internal/nhctl/const"
+	"github.com/lsutils/nocalhost/internal/nhctl/controller"
+	"github.com/lsutils/nocalhost/internal/nhctl/utils"
+	"github.com/lsutils/nocalhost/pkg/nhctl/clientgoutils"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"github.com/pkg/errors"
 	k8serrors "k8s.io/apimachinery/pkg/api/errors"
-	"nocalhost/internal/nhctl/app"
-	"nocalhost/internal/nhctl/common"
-	_const "nocalhost/internal/nhctl/const"
-	"nocalhost/internal/nhctl/controller"
-	"nocalhost/internal/nhctl/utils"
-	"nocalhost/pkg/nhctl/clientgoutils"
-	"nocalhost/pkg/nhctl/log"
 	"path/filepath"
 )
 

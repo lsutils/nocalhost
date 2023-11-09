@@ -7,10 +7,10 @@ package nocalhost_cleanup
 
 import (
 	"fmt"
+	"github.com/lsutils/nocalhost/internal/nhctl/app"
+	"github.com/lsutils/nocalhost/internal/nhctl/nocalhost"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"github.com/pkg/errors"
-	"nocalhost/internal/nhctl/app"
-	"nocalhost/internal/nhctl/nocalhost"
-	"nocalhost/pkg/nhctl/log"
 	"time"
 )
 

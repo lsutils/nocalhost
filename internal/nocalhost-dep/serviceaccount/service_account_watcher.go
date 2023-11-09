@@ -1,7 +1,7 @@
 /*
 * Copyright (C) 2021 THL A29 Limited, a Tencent company.  All rights reserved.
 * This source code is licensed under the Apache License Version 2.0.
-*/
+ */
 
 package service_account
 
@@ -9,6 +9,9 @@ import (
 	"context"
 	"fmt"
 	"github.com/golang/glog"
+	"github.com/lsutils/nocalhost/internal/nhctl/appmeta"
+	"github.com/lsutils/nocalhost/internal/nhctl/watcher"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/setupcluster"
 	authorizationv1 "k8s.io/api/authorization/v1"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
@@ -17,9 +20,6 @@ import (
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/cache"
 	"k8s.io/client-go/tools/clientcmd"
-	"nocalhost/internal/nhctl/appmeta"
-	"nocalhost/internal/nhctl/watcher"
-	"nocalhost/pkg/nocalhost-api/pkg/setupcluster"
 	"strings"
 	"sync"
 )

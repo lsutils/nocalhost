@@ -6,7 +6,7 @@
 package main
 
 import (
-	"nocalhost/cmd/nhctl/cmds"
+	"github.com/lsutils/nocalhost/cmd/nhctl/cmds"
 )
 
 func main() {

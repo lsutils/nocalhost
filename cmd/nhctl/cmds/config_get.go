@@ -7,15 +7,15 @@ package cmds
 
 import (
 	"fmt"
+	"github.com/lsutils/nocalhost/cmd/nhctl/cmds/common"
+	"github.com/lsutils/nocalhost/internal/nhctl/appmeta"
+	"github.com/lsutils/nocalhost/internal/nhctl/dev_dir"
+	"github.com/lsutils/nocalhost/internal/nhctl/fp"
+	"github.com/lsutils/nocalhost/internal/nhctl/profile"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 	"gopkg.in/yaml.v3"
-	"nocalhost/cmd/nhctl/cmds/common"
-	"nocalhost/internal/nhctl/appmeta"
-	"nocalhost/internal/nhctl/dev_dir"
-	"nocalhost/internal/nhctl/fp"
-	"nocalhost/internal/nhctl/profile"
-	"nocalhost/pkg/nhctl/log"
 )
 
 var notificationPrefix = `# This is the runtime configuration which stored in K8s cluster. Modifications 

@@ -2,10 +2,10 @@ package dev_dir
 
 import (
 	"fmt"
+	"github.com/lsutils/nocalhost/internal/nhctl/fp"
+	"github.com/lsutils/nocalhost/pkg/nhctl/clientgoutils"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"github.com/pkg/errors"
-	"nocalhost/internal/nhctl/fp"
-	"nocalhost/pkg/nhctl/clientgoutils"
-	"nocalhost/pkg/nhctl/log"
 	"strings"
 	"sync"
 	"time"

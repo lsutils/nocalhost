@@ -6,9 +6,9 @@
 package profile
 
 import (
-	"nocalhost/internal/nhctl/common/base"
-	"nocalhost/internal/nhctl/fp"
-	"nocalhost/pkg/nhctl/clientgoutils"
+	"github.com/lsutils/nocalhost/internal/nhctl/common/base"
+	"github.com/lsutils/nocalhost/internal/nhctl/fp"
+	"github.com/lsutils/nocalhost/pkg/nhctl/clientgoutils"
 	"strings"
 
 	corev1 "k8s.io/api/core/v1"

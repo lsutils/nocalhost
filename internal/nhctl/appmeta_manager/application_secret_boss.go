@@ -10,11 +10,11 @@ import (
 	"encoding"
 	"errors"
 	"fmt"
+	"github.com/lsutils/nocalhost/internal/nhctl/appmeta"
+	profile2 "github.com/lsutils/nocalhost/internal/nhctl/profile"
+	"github.com/lsutils/nocalhost/internal/nhctl/resouce_cache"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	v1 "k8s.io/api/core/v1"
-	"nocalhost/internal/nhctl/appmeta"
-	profile2 "nocalhost/internal/nhctl/profile"
-	"nocalhost/internal/nhctl/resouce_cache"
-	"nocalhost/pkg/nhctl/log"
 	"sync"
 )
 

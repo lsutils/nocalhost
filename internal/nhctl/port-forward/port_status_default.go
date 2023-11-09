@@ -1,15 +1,16 @@
+//go:build !windows
 // +build !windows
 
 /*
 * Copyright (C) 2021 THL A29 Limited, a Tencent company.  All rights reserved.
 * This source code is licensed under the Apache License Version 2.0.
-*/
+ */
 
 package port_forward
 
 import (
-	"nocalhost/pkg/nhctl/log"
-	"nocalhost/pkg/nhctl/tools"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
+	"github.com/lsutils/nocalhost/pkg/nhctl/tools"
 	"strconv"
 	"strings"
 )

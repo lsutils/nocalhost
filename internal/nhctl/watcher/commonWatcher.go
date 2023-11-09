@@ -7,12 +7,12 @@ package watcher
 
 import (
 	"fmt"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	rt "k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/util/runtime"
 	"k8s.io/apimachinery/pkg/util/wait"
 	"k8s.io/client-go/tools/cache"
 	"k8s.io/client-go/util/workqueue"
-	"nocalhost/pkg/nhctl/log"
 	"time"
 )
 

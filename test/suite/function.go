@@ -8,20 +8,20 @@ package suite
 import (
 	"context"
 	"fmt"
+	_const "github.com/lsutils/nocalhost/internal/nhctl/const"
+	"github.com/lsutils/nocalhost/internal/nhctl/fp"
+	"github.com/lsutils/nocalhost/internal/nhctl/profile"
+	"github.com/lsutils/nocalhost/internal/nhctl/syncthing/ports"
+	"github.com/lsutils/nocalhost/pkg/nhctl/clientgoutils"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
+	utils2 "github.com/lsutils/nocalhost/pkg/nhctl/utils"
+	"github.com/lsutils/nocalhost/test/cluster"
+	"github.com/lsutils/nocalhost/test/runner"
+	"github.com/lsutils/nocalhost/test/testcase"
+	"github.com/lsutils/nocalhost/test/testdata"
+	"github.com/lsutils/nocalhost/test/util"
 	"github.com/pkg/errors"
 	"k8s.io/client-go/util/homedir"
-	_const "nocalhost/internal/nhctl/const"
-	"nocalhost/internal/nhctl/fp"
-	"nocalhost/internal/nhctl/profile"
-	"nocalhost/internal/nhctl/syncthing/ports"
-	"nocalhost/pkg/nhctl/clientgoutils"
-	"nocalhost/pkg/nhctl/log"
-	utils2 "nocalhost/pkg/nhctl/utils"
-	"nocalhost/test/cluster"
-	"nocalhost/test/runner"
-	"nocalhost/test/testcase"
-	"nocalhost/test/testdata"
-	"nocalhost/test/util"
 	"strings"
 	"time"
 )
@@ -212,17 +212,22 @@ func StatefulSetDuplicate(cli runner.Client) {
 	test(cli, "web", "statefulset", profile.DuplicateDevMode)
 }
 
-/**
+/*
+*
 main step:
 install a old version of nhctl
-  (1) enter dev mode
-  (2) start port-forward
-  (3) start file sync
+
+	(1) enter dev mode
+	(2) start port-forward
+	(3) start file sync
+
 then, install a new version of nhctl
-  (1) check sync status, developing status, port-forward status
-  (2) check sync is ok or not
-  (3) try to end port-forward
-  (4) try to end dev mode
+
+	(1) check sync status, developing status, port-forward status
+	(2) check sync is ok or not
+	(3) try to end port-forward
+	(4) try to end dev mode
+
 using new version of nhctl to do more operation
 */
 func Compatible(cli runner.Client) {

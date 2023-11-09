@@ -7,9 +7,9 @@ package dns
 
 import (
 	"fmt"
+	"github.com/lsutils/nocalhost/internal/nhctl/vpn/util"
 	miekgdns "github.com/miekg/dns"
 	log "github.com/sirupsen/logrus"
-	"nocalhost/internal/nhctl/vpn/util"
 	"strconv"
 	"testing"
 )

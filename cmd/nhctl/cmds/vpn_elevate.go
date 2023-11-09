@@ -6,10 +6,10 @@
 package cmds
 
 import (
+	"github.com/lsutils/nocalhost/internal/nhctl/daemon_client"
+	"github.com/lsutils/nocalhost/internal/nhctl/vpn/util"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"github.com/spf13/cobra"
-	"nocalhost/internal/nhctl/daemon_client"
-	"nocalhost/internal/nhctl/vpn/util"
-	"nocalhost/pkg/nhctl/log"
 )
 
 func init() {

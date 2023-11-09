@@ -7,8 +7,8 @@ package controller
 
 import (
 	"fmt"
-	_const "nocalhost/internal/nhctl/const"
-	"nocalhost/internal/nhctl/profile"
+	_const "github.com/lsutils/nocalhost/internal/nhctl/const"
+	"github.com/lsutils/nocalhost/internal/nhctl/profile"
 )
 
 // EnterPodTerminal Try to use shell defined in devContainerShell to enter pod's terminal

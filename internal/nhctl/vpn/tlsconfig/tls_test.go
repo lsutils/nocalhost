@@ -8,10 +8,10 @@ package tlsconfig
 import (
 	"crypto/tls"
 	"fmt"
+	"github.com/lsutils/nocalhost/internal/nhctl/vpn/util"
 	log "github.com/sirupsen/logrus"
 	"io"
 	"net"
-	"nocalhost/internal/nhctl/vpn/util"
 	"testing"
 )
 

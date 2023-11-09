@@ -7,20 +7,20 @@ package controller
 
 import (
 	"fmt"
+	_const "github.com/lsutils/nocalhost/internal/nhctl/const"
+	"github.com/lsutils/nocalhost/internal/nhctl/nocalhost"
+	"github.com/lsutils/nocalhost/internal/nhctl/syncthing/network/req"
+	"github.com/lsutils/nocalhost/internal/nhctl/syncthing/ports"
+	secret_config "github.com/lsutils/nocalhost/internal/nhctl/syncthing/secret-config"
 	"github.com/pkg/errors"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	_const "nocalhost/internal/nhctl/const"
-	"nocalhost/internal/nhctl/nocalhost"
-	"nocalhost/internal/nhctl/syncthing/network/req"
-	"nocalhost/internal/nhctl/syncthing/ports"
-	secret_config "nocalhost/internal/nhctl/syncthing/secret-config"
 	"os"
 	"path/filepath"
 	"strconv"
 
-	"nocalhost/internal/nhctl/syncthing"
-	"nocalhost/pkg/nhctl/log"
+	"github.com/lsutils/nocalhost/internal/nhctl/syncthing"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 )
 
 func (c *Controller) NewSyncthing(container string, localSyncDir []string, syncDouble bool) (

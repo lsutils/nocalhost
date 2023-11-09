@@ -8,11 +8,11 @@ package cmds
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/lsutils/nocalhost/cmd/nhctl/cmds/common"
+	"github.com/lsutils/nocalhost/internal/nhctl/const"
+	"github.com/lsutils/nocalhost/pkg/nhctl/clientgoutils"
 	"github.com/pkg/errors"
 	"gopkg.in/yaml.v3"
-	"nocalhost/cmd/nhctl/cmds/common"
-	"nocalhost/internal/nhctl/const"
-	"nocalhost/pkg/nhctl/clientgoutils"
 
 	"github.com/spf13/cobra"
 	v1 "k8s.io/api/core/v1"

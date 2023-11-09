@@ -6,13 +6,13 @@
 package cmds
 
 import (
+	"github.com/lsutils/nocalhost/cmd/nhctl/cmds/common"
+	"github.com/lsutils/nocalhost/internal/nhctl/daemon_client"
+	"github.com/lsutils/nocalhost/internal/nhctl/daemon_server/command"
+	"github.com/lsutils/nocalhost/internal/nhctl/utils"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"github.com/spf13/cobra"
 	"io/ioutil"
-	"nocalhost/cmd/nhctl/cmds/common"
-	"nocalhost/internal/nhctl/daemon_client"
-	"nocalhost/internal/nhctl/daemon_server/command"
-	"nocalhost/internal/nhctl/utils"
-	"nocalhost/pkg/nhctl/log"
 )
 
 func init() {

@@ -8,15 +8,15 @@ package applications
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/lsutils/nocalhost/cmd/nhctl/cmds/tpl"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/global"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/model"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/service"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/app/api"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/app/router/ginbase"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/errno"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/log"
 	"github.com/spf13/cast"
-	"nocalhost/cmd/nhctl/cmds/tpl"
-	"nocalhost/internal/nocalhost-api/global"
-	"nocalhost/internal/nocalhost-api/model"
-	"nocalhost/internal/nocalhost-api/service"
-	"nocalhost/pkg/nocalhost-api/app/api"
-	"nocalhost/pkg/nocalhost-api/app/router/ginbase"
-	"nocalhost/pkg/nocalhost-api/pkg/errno"
-	"nocalhost/pkg/nocalhost-api/pkg/log"
 
 	"github.com/gin-gonic/gin"
 )
@@ -29,7 +29,7 @@ import (
 // @Produce  json
 // @param Authorization header string true "Authorization"
 // @Success 200 {object} api.Response "{"code":0,"message":"OK","data":
-//[{"id":1,"context":"application info","status":"1"}]}"
+// [{"id":1,"context":"application info","status":"1"}]}"
 // @Router /v1/application [get]
 func Get(c *gin.Context) {
 

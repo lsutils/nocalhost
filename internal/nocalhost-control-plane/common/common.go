@@ -5,7 +5,7 @@
 
 package common
 
-import "nocalhost/internal/nhctl/controller"
+import "github.com/lsutils/nocalhost/internal/nhctl/controller"
 
 const (
 	ListenerAddress    = "0.0.0.0"

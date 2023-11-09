@@ -6,7 +6,7 @@
 package user
 
 import (
-	"nocalhost/internal/nocalhost-api/model"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/model"
 )
 
 // CreateRequest

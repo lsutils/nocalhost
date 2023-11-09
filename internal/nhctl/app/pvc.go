@@ -6,8 +6,8 @@
 package app
 
 import (
+	"github.com/lsutils/nocalhost/internal/nhctl/const"
 	v1 "k8s.io/api/core/v1"
-	"nocalhost/internal/nhctl/const"
 )
 
 // Get all PersistVolumeClaims created by this application

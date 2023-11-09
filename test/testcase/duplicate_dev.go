@@ -4,12 +4,12 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	"github.com/lsutils/nocalhost/internal/nhctl/appmeta"
+	"github.com/lsutils/nocalhost/internal/nhctl/profile"
+	"github.com/lsutils/nocalhost/internal/nhctl/syncthing/ports"
+	"github.com/lsutils/nocalhost/test/runner"
+	"github.com/lsutils/nocalhost/test/util"
 	"k8s.io/apimachinery/pkg/apis/meta/v1"
-	"nocalhost/internal/nhctl/appmeta"
-	"nocalhost/internal/nhctl/profile"
-	"nocalhost/internal/nhctl/syncthing/ports"
-	"nocalhost/test/runner"
-	"nocalhost/test/util"
 	"time"
 )
 

@@ -11,10 +11,10 @@ import (
 	"bytes"
 	"context"
 	"fmt"
+	_const "github.com/lsutils/nocalhost/internal/nhctl/const"
 	"github.com/pkg/errors"
 	"io/ioutil"
 	"net/http"
-	_const "nocalhost/internal/nhctl/const"
 	"os"
 	"os/exec"
 	"path/filepath"
@@ -24,9 +24,9 @@ import (
 
 	ps "github.com/mitchellh/go-ps"
 
-	"nocalhost/internal/nhctl/syncthing/local"
-	"nocalhost/internal/nhctl/syncthing/terminate"
-	"nocalhost/pkg/nhctl/log"
+	"github.com/lsutils/nocalhost/internal/nhctl/syncthing/local"
+	"github.com/lsutils/nocalhost/internal/nhctl/syncthing/terminate"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 )
 
 var (
@@ -69,7 +69,7 @@ const (
 	DisableParseFromGitIgnore = "#disableParseFromGitIgnore"
 )
 
-//Folder represents a sync folder
+// Folder represents a sync folder
 type Folder struct {
 	Name         string `yaml:"name"`
 	LocalPath    string `yaml:"localPath"`
@@ -78,7 +78,7 @@ type Folder struct {
 	SentStIgnore bool   `yaml:"-"`
 }
 
-//Ignores represents the .stignore file
+// Ignores represents the .stignore file
 type Ignores struct {
 	Ignore []string `json:"ignore"`
 }
@@ -120,7 +120,7 @@ type Syncthing struct {
 	EnableParseFromGitIgnore bool `yaml:"-"`
 }
 
-//IsSubPathFolder checks if a sync folder is a subpath of another sync folder
+// IsSubPathFolder checks if a sync folder is a subpath of another sync folder
 func IsSubPathFolder(path string, paths []string) (bool, error) {
 	found := false
 	for _, sync := range paths {

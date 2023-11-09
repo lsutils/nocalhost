@@ -7,8 +7,8 @@ package application_cluster
 
 import (
 	"context"
-	"nocalhost/internal/nocalhost-api/model"
-	"nocalhost/internal/nocalhost-api/repository/application_cluster"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/model"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/repository/application_cluster"
 
 	"github.com/pkg/errors"
 )

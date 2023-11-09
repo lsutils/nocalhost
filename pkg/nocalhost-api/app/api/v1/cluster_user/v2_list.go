@@ -11,14 +11,14 @@ import (
 	"github.com/gin-gonic/gin"
 	"sort"
 
-	"nocalhost/internal/nocalhost-api/model"
-	"nocalhost/internal/nocalhost-api/service"
-	"nocalhost/internal/nocalhost-api/service/cooperator/cluster_scope"
-	"nocalhost/internal/nocalhost-api/service/cooperator/ns_scope"
-	"nocalhost/pkg/nocalhost-api/app/api"
-	"nocalhost/pkg/nocalhost-api/app/router/ginbase"
-	"nocalhost/pkg/nocalhost-api/pkg/errno"
-	"nocalhost/pkg/nocalhost-api/pkg/log"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/model"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/service"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/service/cooperator/cluster_scope"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/service/cooperator/ns_scope"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/app/api"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/app/router/ginbase"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/errno"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/log"
 )
 
 func GetV2(c *gin.Context) {

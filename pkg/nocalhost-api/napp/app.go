@@ -1,7 +1,7 @@
 /*
 * Copyright (C) 2021 THL A29 Limited, a Tencent company.  All rights reserved.
 * This source code is licensed under the Apache License Version 2.0.
-*/
+ */
 
 package napp
 
@@ -15,8 +15,8 @@ import (
 	"syscall"
 	"time"
 
-	"nocalhost/internal/nocalhost-api/model"
-	"nocalhost/pkg/nocalhost-api/conf"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/model"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/conf"
 
 	"github.com/gin-gonic/gin"
 	"github.com/go-redis/redis"

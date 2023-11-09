@@ -7,10 +7,10 @@ package tools
 
 import (
 	"context"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"github.com/pkg/errors"
 	"io"
 	"math/rand"
-	"nocalhost/pkg/nhctl/log"
 	"os"
 	"os/exec"
 	"runtime"
@@ -22,7 +22,7 @@ import (
 
 var logger *zap.Logger
 
-//execute command
+// execute command
 func ExecCommand(
 	ctx context.Context, isDisplay bool, redirectStderr bool, ignoreCmdErr bool, commandName string, params ...string,
 ) (string, error) {

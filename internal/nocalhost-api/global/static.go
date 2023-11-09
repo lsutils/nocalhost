@@ -23,7 +23,7 @@ const (
 	NocalhostDefaultPriorityclassKey          = "--priority-class"
 	NocalhostCreateByLabel                    = "app.kubernetes.io/created-by"
 	NocalhostRegistry                         = "nocalhost-docker.pkg.coding.net"
-	Nocalhostrepository                       = "nocalhost/public/nocalhost-api"
+	Nocalhostrepository                       = "github.com/lsutils/nocalhost/public/nocalhost-api"
 	NocalhostSaTokenSuffix                    = "-token-gen-by-nocalhost"
 )
 

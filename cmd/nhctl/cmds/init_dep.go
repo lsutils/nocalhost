@@ -7,16 +7,16 @@ package cmds
 
 import (
 	"fmt"
+	"github.com/lsutils/nocalhost/cmd/nhctl/cmds/common"
+	"github.com/lsutils/nocalhost/internal/nhctl/app"
+	"github.com/lsutils/nocalhost/internal/nhctl/utils"
+	"github.com/lsutils/nocalhost/pkg/nhctl/clientgoutils"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/clientgo"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/setupcluster"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 	"io/ioutil"
-	"nocalhost/cmd/nhctl/cmds/common"
-	"nocalhost/internal/nhctl/app"
-	"nocalhost/internal/nhctl/utils"
-	"nocalhost/pkg/nhctl/clientgoutils"
-	"nocalhost/pkg/nhctl/log"
-	"nocalhost/pkg/nocalhost-api/pkg/clientgo"
-	"nocalhost/pkg/nocalhost-api/pkg/setupcluster"
 	"time"
 )
 

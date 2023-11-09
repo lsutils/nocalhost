@@ -8,10 +8,10 @@ package user
 import (
 	"context"
 	"fmt"
+	_const "github.com/lsutils/nocalhost/internal/nhctl/const"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/cache"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/utils"
 	"github.com/pkg/errors"
-	_const "nocalhost/internal/nhctl/const"
-	"nocalhost/internal/nocalhost-api/cache"
-	"nocalhost/pkg/nocalhost-api/pkg/utils"
 	"strings"
 	"time"
 
@@ -19,9 +19,9 @@ import (
 
 	"github.com/jinzhu/gorm"
 
-	"nocalhost/internal/nocalhost-api/model"
-	"nocalhost/internal/nocalhost-api/repository/user"
-	"nocalhost/pkg/nocalhost-api/pkg/auth"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/model"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/repository/user"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/auth"
 )
 
 type User struct {

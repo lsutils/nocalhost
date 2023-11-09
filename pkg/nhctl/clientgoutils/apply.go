@@ -7,6 +7,7 @@ package clientgoutils
 
 import (
 	"bytes"
+	"github.com/lsutils/nocalhost/internal/nhctl/const"
 	"github.com/pkg/errors"
 	"io"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
@@ -16,9 +17,8 @@ import (
 	"k8s.io/cli-runtime/pkg/resource"
 	"k8s.io/kubectl/pkg/cmd/apply"
 	cmdutil "k8s.io/kubectl/pkg/cmd/util"
-	"nocalhost/internal/nhctl/const"
 	//"k8s.io/kubectl/pkg/util"
-	"nocalhost/pkg/nhctl/log"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"os"
 )
 

@@ -9,6 +9,7 @@ import (
 	"context"
 	"crypto/md5"
 	"fmt"
+	"github.com/lsutils/nocalhost/internal/nhctl/vpn/util"
 	log "github.com/sirupsen/logrus"
 	v1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/errors"
@@ -17,7 +18,6 @@ import (
 	"k8s.io/apimachinery/pkg/util/sets"
 	"k8s.io/client-go/kubernetes"
 	"net"
-	"nocalhost/internal/nhctl/vpn/util"
 	"sort"
 	"strconv"
 	"strings"
@@ -38,7 +38,7 @@ func NewDHCPManager(client *kubernetes.Clientset, namespace string, addr *net.IP
 	}
 }
 
-//	todo optimize dhcp, using mac address, ip and deadline as unit
+// todo optimize dhcp, using mac address, ip and deadline as unit
 func (d *DHCPManager) InitDHCPIfNecessary(ctx context.Context) (*v1.ConfigMap, error) {
 	configMap, err := d.client.CoreV1().ConfigMaps(d.namespace).Get(context.Background(), util.TrafficManager, metav1.GetOptions{})
 	// already exists, do nothing

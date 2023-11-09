@@ -9,9 +9,9 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	"github.com/lsutils/nocalhost/internal/nhctl/appmeta"
+	"github.com/lsutils/nocalhost/internal/nhctl/fp"
 	"math/rand"
-	"nocalhost/internal/nhctl/appmeta"
-	"nocalhost/internal/nhctl/fp"
 	"regexp"
 	"strings"
 	"time"
@@ -21,8 +21,8 @@ import (
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"nocalhost/pkg/nhctl/log"
-	"nocalhost/pkg/nhctl/tools"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
+	"github.com/lsutils/nocalhost/pkg/nhctl/tools"
 )
 
 // Install different type of Application: Helm, Manifest, Kustomize

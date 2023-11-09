@@ -7,8 +7,8 @@ package tun
 
 import (
 	"fmt"
+	"github.com/lsutils/nocalhost/internal/nhctl/vpn/util"
 	"net"
-	"nocalhost/internal/nhctl/vpn/util"
 	"os/exec"
 	"strings"
 

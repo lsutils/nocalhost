@@ -3,8 +3,8 @@ package profile
 import (
 	"errors"
 	"fmt"
-	"nocalhost/internal/nhctl/utils"
-	"nocalhost/pkg/nhctl/log"
+	"github.com/lsutils/nocalhost/internal/nhctl/utils"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"strings"
 	"testing"
 )

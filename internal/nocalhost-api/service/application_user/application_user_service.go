@@ -7,8 +7,8 @@ package application_user
 
 import (
 	"context"
-	"nocalhost/internal/nocalhost-api/model"
-	"nocalhost/internal/nocalhost-api/repository/application_user"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/model"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/repository/application_user"
 )
 
 type ApplicationUser struct {

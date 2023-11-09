@@ -1,14 +1,14 @@
 /*
 * Copyright (C) 2021 THL A29 Limited, a Tencent company.  All rights reserved.
 * This source code is licensed under the Apache License Version 2.0.
-*/
+ */
 
 package setupcluster
 
 import (
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/clientgo"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/errno"
 	corev1 "k8s.io/api/core/v1"
-	"nocalhost/pkg/nocalhost-api/pkg/clientgo"
-	"nocalhost/pkg/nocalhost-api/pkg/errno"
 )
 
 type ClusterDevsSetUp interface {

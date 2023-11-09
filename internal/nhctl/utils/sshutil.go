@@ -7,10 +7,10 @@ package utils
 
 import (
 	"context"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"golang.org/x/crypto/ssh"
 	"io"
 	"net"
-	"nocalhost/pkg/nhctl/log"
 	"time"
 )
 

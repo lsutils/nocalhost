@@ -7,11 +7,11 @@ package cluster
 
 import (
 	"github.com/gin-gonic/gin"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/service"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/app/api"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/app/router/middleware"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/errno"
 	"github.com/spf13/cast"
-	"nocalhost/internal/nocalhost-api/service"
-	"nocalhost/pkg/nocalhost-api/app/api"
-	"nocalhost/pkg/nocalhost-api/app/router/middleware"
-	"nocalhost/pkg/nocalhost-api/pkg/errno"
 )
 
 // @Summary Update cluster

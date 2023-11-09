@@ -6,10 +6,10 @@
 package app
 
 import (
+	profile2 "github.com/lsutils/nocalhost/internal/nhctl/profile"
 	"github.com/pkg/errors"
 	"gopkg.in/yaml.v3"
 	"io/ioutil"
-	profile2 "nocalhost/internal/nhctl/profile"
 )
 
 func ConvertConfigFileV1ToV2(srcFile string, destFile string) error {

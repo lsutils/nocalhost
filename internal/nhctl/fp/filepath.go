@@ -8,11 +8,11 @@ package fp
 import (
 	"bufio"
 	"fmt"
+	"github.com/lsutils/nocalhost/internal/nhctl/syncthing/network/req"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"github.com/pkg/errors"
 	"io/ioutil"
 	"net/http"
-	"nocalhost/internal/nhctl/syncthing/network/req"
-	"nocalhost/pkg/nhctl/log"
 	"os"
 	"path/filepath"
 	"strings"
@@ -239,7 +239,7 @@ func (f *FilePathEnhance) ReadEnvFileKV() map[string]string {
 	return envFiles
 }
 
-func (f *FilePathEnhance) Remove()error {
+func (f *FilePathEnhance) Remove() error {
 	return os.Remove(f.absPath)
 }
 

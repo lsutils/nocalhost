@@ -3,8 +3,8 @@ package dev_dir
 import (
 	"errors"
 	"fmt"
-	"nocalhost/internal/nhctl/common/base"
-	"nocalhost/pkg/nhctl/log"
+	"github.com/lsutils/nocalhost/internal/nhctl/common/base"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"os"
 	"testing"
 )

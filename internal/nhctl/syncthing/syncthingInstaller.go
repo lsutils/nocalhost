@@ -1,18 +1,18 @@
 /*
 * Copyright (C) 2021 THL A29 Limited, a Tencent company.  All rights reserved.
 * This source code is licensed under the Apache License Version 2.0.
-*/
+ */
 
 package syncthing
 
 import (
 	"fmt"
 	"github.com/google/uuid"
+	"github.com/lsutils/nocalhost/internal/nhctl/coloredoutput"
+	"github.com/lsutils/nocalhost/internal/nhctl/syncthing/bin"
+	"github.com/lsutils/nocalhost/internal/nhctl/utils"
 	"io"
 	"io/fs"
-	"nocalhost/internal/nhctl/coloredoutput"
-	"nocalhost/internal/nhctl/syncthing/bin"
-	"nocalhost/internal/nhctl/utils"
 	"os"
 	"os/exec"
 	"path/filepath"
@@ -20,7 +20,7 @@ import (
 	"strings"
 	"time"
 
-	"nocalhost/pkg/nhctl/log"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 )
 
 var (

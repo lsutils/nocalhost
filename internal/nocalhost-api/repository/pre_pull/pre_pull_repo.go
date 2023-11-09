@@ -9,7 +9,7 @@ import (
 	"context"
 	"errors"
 	"github.com/jinzhu/gorm"
-	"nocalhost/internal/nocalhost-api/model"
+	"github.com/lsutils/nocalhost/internal/nocalhost-api/model"
 )
 
 type PrePullRepoRepoBase struct {

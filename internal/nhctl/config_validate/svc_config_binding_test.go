@@ -8,11 +8,11 @@ package config_validate
 import (
 	"errors"
 	"github.com/go-playground/validator/v10"
-	_const "nocalhost/internal/nhctl/const"
-	"nocalhost/internal/nhctl/fp"
-	"nocalhost/internal/nhctl/profile"
-	"nocalhost/pkg/nhctl/log"
-	"nocalhost/pkg/nocalhost-api/pkg/clientgo"
+	_const "github.com/lsutils/nocalhost/internal/nhctl/const"
+	"github.com/lsutils/nocalhost/internal/nhctl/fp"
+	"github.com/lsutils/nocalhost/internal/nhctl/profile"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/clientgo"
 	"os"
 	"testing"
 )

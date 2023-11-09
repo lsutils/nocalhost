@@ -7,9 +7,9 @@ package cmds
 
 import (
 	"encoding/json"
+	"github.com/lsutils/nocalhost/internal/nhctl/daemon_client"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"github.com/spf13/cobra"
-	"nocalhost/internal/nhctl/daemon_client"
-	"nocalhost/pkg/nhctl/log"
 )
 
 func init() {

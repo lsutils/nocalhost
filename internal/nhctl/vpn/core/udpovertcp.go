@@ -9,9 +9,9 @@ import (
 	"bytes"
 	"encoding/binary"
 	"errors"
+	"github.com/lsutils/nocalhost/internal/nhctl/vpn/util"
 	"io"
 	"net"
-	"nocalhost/internal/nhctl/vpn/util"
 	"strconv"
 	"strings"
 )

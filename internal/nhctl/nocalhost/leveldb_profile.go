@@ -6,13 +6,13 @@
 package nocalhost
 
 import (
+	nocalhostDb "github.com/lsutils/nocalhost/internal/nhctl/nocalhost/db"
+	"github.com/lsutils/nocalhost/internal/nhctl/nocalhost_path"
+	"github.com/lsutils/nocalhost/internal/nhctl/profile"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"github.com/pkg/errors"
 	"github.com/syndtr/goleveldb/leveldb"
 	"gopkg.in/yaml.v3"
-	nocalhostDb "nocalhost/internal/nhctl/nocalhost/db"
-	"nocalhost/internal/nhctl/nocalhost_path"
-	"nocalhost/internal/nhctl/profile"
-	"nocalhost/pkg/nhctl/log"
 	"os"
 	"regexp"
 )

@@ -8,13 +8,13 @@ package cmds
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/lsutils/nocalhost/cmd/nhctl/cmds/common"
+	"github.com/lsutils/nocalhost/internal/nhctl/daemon_client"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
-	"nocalhost/cmd/nhctl/cmds/common"
-	"nocalhost/internal/nhctl/daemon_client"
 
 	//"github.com/syncthing/syncthing/lib/discover"
-	"nocalhost/pkg/nhctl/clientgoutils"
+	"github.com/lsutils/nocalhost/pkg/nhctl/clientgoutils"
 )
 
 var timeout int64

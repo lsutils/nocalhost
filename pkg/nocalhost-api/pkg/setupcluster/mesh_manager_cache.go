@@ -23,8 +23,8 @@ import (
 	"k8s.io/client-go/informers"
 	toolscache "k8s.io/client-go/tools/cache"
 
-	"nocalhost/internal/nhctl/appmeta"
-	"nocalhost/internal/nhctl/const"
+	"github.com/lsutils/nocalhost/internal/nhctl/appmeta"
+	"github.com/lsutils/nocalhost/internal/nhctl/const"
 )
 
 const (

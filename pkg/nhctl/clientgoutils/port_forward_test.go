@@ -2,8 +2,8 @@ package clientgoutils
 
 import (
 	"fmt"
+	"github.com/lsutils/nocalhost/internal/nhctl/utils"
 	"k8s.io/cli-runtime/pkg/genericclioptions"
-	"nocalhost/internal/nhctl/utils"
 	"os"
 	"path/filepath"
 	"strings"

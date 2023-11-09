@@ -7,8 +7,8 @@ package core
 
 import (
 	"context"
+	"github.com/lsutils/nocalhost/internal/nhctl/vpn/tun"
 	"net"
-	"nocalhost/internal/nhctl/vpn/tun"
 )
 
 type Handler interface {

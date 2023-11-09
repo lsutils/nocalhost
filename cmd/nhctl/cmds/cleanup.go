@@ -6,8 +6,8 @@
 package cmds
 
 import (
+	"github.com/lsutils/nocalhost/internal/nhctl/nocalhost_cleanup"
 	"github.com/spf13/cobra"
-	"nocalhost/internal/nhctl/nocalhost_cleanup"
 )
 
 func init() {

@@ -2,9 +2,9 @@ package daemon_handler
 
 import (
 	"fmt"
+	"github.com/lsutils/nocalhost/internal/nhctl/vpn/remote"
+	"github.com/lsutils/nocalhost/internal/nhctl/vpn/util"
 	"k8s.io/apimachinery/pkg/util/sets"
-	"nocalhost/internal/nhctl/vpn/remote"
-	"nocalhost/internal/nhctl/vpn/util"
 	"strings"
 )
 

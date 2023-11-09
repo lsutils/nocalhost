@@ -6,9 +6,9 @@
 package app
 
 import (
-	"nocalhost/internal/nhctl/fp"
-	"nocalhost/internal/nhctl/profile"
-	"nocalhost/pkg/nhctl/log"
+	"github.com/lsutils/nocalhost/internal/nhctl/fp"
+	"github.com/lsutils/nocalhost/internal/nhctl/profile"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 )
 
 func (a *Application) PreInstallHook() error {

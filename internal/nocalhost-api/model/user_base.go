@@ -6,12 +6,12 @@
 package model
 
 import (
+	_const "github.com/lsutils/nocalhost/internal/nhctl/const"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"math/rand"
-	_const "nocalhost/internal/nhctl/const"
-	"nocalhost/pkg/nhctl/log"
 	"time"
 
-	"nocalhost/pkg/nocalhost-api/pkg/auth"
+	"github.com/lsutils/nocalhost/pkg/nocalhost-api/pkg/auth"
 
 	"github.com/go-playground/validator/v10"
 )

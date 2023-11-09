@@ -8,6 +8,7 @@ package clientgoutils
 import (
 	"context"
 	"fmt"
+	"github.com/lsutils/nocalhost/internal/nhctl/utils"
 	"github.com/pkg/errors"
 	corev1 "k8s.io/api/core/v1"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
@@ -16,7 +17,6 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/client-go/tools/reference"
 	"k8s.io/kubectl/pkg/scheme"
-	"nocalhost/internal/nhctl/utils"
 )
 
 func (c *ClientGoUtils) ListEventsByReplicaSet(rsName string) ([]corev1.Event, error) {

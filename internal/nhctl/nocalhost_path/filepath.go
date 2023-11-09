@@ -6,7 +6,7 @@
 package nocalhost_path
 
 import (
-	"nocalhost/internal/nhctl/utils"
+	"github.com/lsutils/nocalhost/internal/nhctl/utils"
 	"path/filepath"
 )
 

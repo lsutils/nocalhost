@@ -5,7 +5,7 @@
 
 package nocalhost
 
-import nocalhostdb "nocalhost/internal/nhctl/nocalhost/db"
+import nocalhostdb "github.com/lsutils/nocalhost/internal/nhctl/nocalhost/db"
 
 func UpdateKey(ns, app, nid string, key string, value string) error {
 	db, err := nocalhostdb.OpenApplicationLevelDB(ns, app, nid, false)

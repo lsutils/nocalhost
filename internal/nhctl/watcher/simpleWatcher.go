@@ -1,11 +1,11 @@
 package watcher
 
 import (
+	"github.com/lsutils/nocalhost/pkg/nhctl/clientgoutils"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/dynamic/dynamicinformer"
 	"k8s.io/client-go/tools/cache"
 	"k8s.io/client-go/util/workqueue"
-	"nocalhost/pkg/nhctl/clientgoutils"
 	"sync"
 	"time"
 )

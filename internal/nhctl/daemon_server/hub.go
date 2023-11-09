@@ -7,10 +7,10 @@ package daemon_server
 
 import (
 	"context"
+	"github.com/lsutils/nocalhost/internal/nhctl/nocalhost_path"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
+	"github.com/lsutils/nocalhost/pkg/nhctl/tools"
 	"github.com/pkg/errors"
-	"nocalhost/internal/nhctl/nocalhost_path"
-	"nocalhost/pkg/nhctl/log"
-	"nocalhost/pkg/nhctl/tools"
 	"os"
 	"time"
 )

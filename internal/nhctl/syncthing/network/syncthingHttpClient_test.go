@@ -3,7 +3,7 @@ package syncthing
 import (
 	"encoding/json"
 	"fmt"
-	"nocalhost/internal/nhctl/syncthing/network/req"
+	"github.com/lsutils/nocalhost/internal/nhctl/syncthing/network/req"
 	"testing"
 	"time"
 )

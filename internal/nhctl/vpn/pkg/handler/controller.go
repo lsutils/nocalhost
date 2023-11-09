@@ -7,7 +7,7 @@ package handler
 
 import (
 	"encoding/json"
-	_const "nocalhost/internal/nhctl/const"
+	_const "github.com/lsutils/nocalhost/internal/nhctl/const"
 	"strconv"
 	"strings"
 

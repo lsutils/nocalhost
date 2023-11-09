@@ -9,16 +9,16 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"github.com/lsutils/nocalhost/cmd/nhctl/cmds/common"
+	"github.com/lsutils/nocalhost/internal/nhctl/fp"
+	"github.com/lsutils/nocalhost/pkg/nhctl/clientgoutils"
+	"github.com/lsutils/nocalhost/pkg/nhctl/k8sutils"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"github.com/spf13/cobra"
 	"golang.org/x/text/encoding/unicode"
 	"golang.org/x/text/transform"
 	"io/ioutil"
 	"k8s.io/apimachinery/pkg/util/sets"
-	"nocalhost/cmd/nhctl/cmds/common"
-	"nocalhost/internal/nhctl/fp"
-	"nocalhost/pkg/nhctl/clientgoutils"
-	"nocalhost/pkg/nhctl/k8sutils"
-	"nocalhost/pkg/nhctl/log"
 	"os"
 )
 
@@ -195,7 +195,6 @@ func CheckKubeconfig(kubeconfigParams string, contextParam string) CheckInfo {
 		}
 	}
 }
-
 
 var (
 	SUCCESS CheckInfoStatus = "SUCCESS"

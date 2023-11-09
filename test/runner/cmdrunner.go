@@ -7,9 +7,9 @@ package runner
 
 import (
 	"bytes"
+	"github.com/lsutils/nocalhost/pkg/nhctl/log"
 	"github.com/pkg/errors"
 	"io"
-	"nocalhost/pkg/nhctl/log"
 	"os"
 	"os/exec"
 	"strings"

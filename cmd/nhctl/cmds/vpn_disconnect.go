@@ -6,15 +6,15 @@
 package cmds
 
 import (
+	"github.com/lsutils/nocalhost/cmd/nhctl/cmds/common"
+	"github.com/lsutils/nocalhost/internal/nhctl/daemon_client"
+	"github.com/lsutils/nocalhost/internal/nhctl/daemon_server/command"
+	"github.com/lsutils/nocalhost/internal/nhctl/vpn/driver"
+	"github.com/lsutils/nocalhost/internal/nhctl/vpn/util"
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 	"k8s.io/client-go/tools/clientcmd"
 	"k8s.io/client-go/util/retry"
-	"nocalhost/cmd/nhctl/cmds/common"
-	"nocalhost/internal/nhctl/daemon_client"
-	"nocalhost/internal/nhctl/daemon_server/command"
-	"nocalhost/internal/nhctl/vpn/driver"
-	"nocalhost/internal/nhctl/vpn/util"
 	"os"
 	"path/filepath"
 )
